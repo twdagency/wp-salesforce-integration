@@ -1,257 +1,239 @@
-# WordPress to Salesforce Integration
+# WordPress Salesforce Integration
 
-A comprehensive WordPress plugin that syncs custom post types with ACF (Advanced Custom Fields) data to Salesforce objects. This plugin handles complex data transformations, including ACF checkbox fields that aren't compatible with Salesforce boolean fields, and supports both regular and AJAX post updates.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![WordPress](https://img.shields.io/badge/WordPress-5.0%2B-blue.svg)](https://wordpress.org/)
+[![PHP](https://img.shields.io/badge/PHP-7.4%2B-purple.svg)](https://php.net/)
 
-## Features
+A comprehensive WordPress plugin that seamlessly integrates WordPress with Salesforce, providing bidirectional data synchronization, user management, and advanced admin controls.
 
-- **Automatic Sync**: Automatically syncs WordPress posts to Salesforce when updated
-- **ACF Support**: Full support for Advanced Custom Fields with intelligent data transformation
-- **Checkbox Handling**: Multiple strategies for converting ACF checkbox arrays to Salesforce-compatible formats
-- **AJAX Support**: Handles post updates triggered via AJAX calls
-- **Field Mapping**: Flexible field mapping configuration between WordPress/ACF and Salesforce
-- **Error Handling**: Comprehensive logging and error handling system
-- **Background Processing**: Queue-based sync system to avoid blocking WordPress operations
-- **Admin Interface**: User-friendly admin interface for configuration and monitoring
+## 🚀 Features
 
-## Requirements
+### Core Integration
+- **Complete Salesforce Integration**: Syncs with 10 Salesforce objects
+- **705 Salesforce Fields**: Mapped from actual CSV data with accurate field types
+- **Bidirectional Sync**: WordPress to Salesforce and Salesforce to WordPress
+- **Real-time Updates**: Automatic sync on content changes
 
+### User Management
+- **Automatic Lead Creation**: New users become Salesforce Leads
+- **Lead Conversion**: Leads convert to Contacts and Accounts upon approval
+- **Migration Support**: Safe migration from miniOrange plugin
+- **Duplicate Prevention**: Prevents duplicate records during migration
+
+### Manual Sync Controls
+- **Individual Post Sync**: Meta boxes on all post edit pages
+- **Individual User Sync**: Fields on user profile pages
+- **Bulk Sync Operations**: Dashboard buttons for mass operations
+- **Status Monitoring**: Real-time sync status indicators
+- **Error Recovery**: Clear error messages and retry options
+
+### Admin Interface
+- **Main Dashboard**: System overview with health monitoring
+- **Field Mapping Manager**: Visual field mapping interface
+- **Audit Trail**: Comprehensive operation logging
+- **ACF Field Management**: Automatic field creation and management
+- **Connection Management**: OAuth2 setup and testing
+- **Migration Tools**: Safe transition from other plugins
+
+## 📦 Installation
+
+### Prerequisites
 - WordPress 5.0 or higher
-- Advanced Custom Fields (ACF) plugin
-- Salesforce account with API access
 - PHP 7.4 or higher
+- Advanced Custom Fields plugin (recommended)
+- Salesforce API access with OAuth2
 
-## Installation
+### Installation Steps
 
-1. Upload the `wp-salesforce-integration` folder to your `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Go to Settings > Salesforce Integration to configure the plugin
+1. **Download the Plugin**
+   ```bash
+   git clone https://github.com/yourusername/wp-salesforce-integration.git
+   ```
 
-## Salesforce Setup
+2. **Upload to WordPress**
+   - Upload the plugin files to `/wp-content/plugins/wp-salesforce-integration/`
+   - Or install via WordPress admin → Plugins → Add New → Upload Plugin
 
-### 1. Create a Connected App
+3. **Activate the Plugin**
+   - Go to WordPress admin → Plugins
+   - Find "WordPress Salesforce Integration" and click "Activate"
 
-1. In Salesforce, go to Setup > App Manager
-2. Click "New Connected App"
-3. Fill in the required fields:
-   - Connected App Name: "WordPress Integration"
-   - API Name: "WordPress_Integration"
-   - Contact Email: Your email
-4. Enable OAuth Settings:
-   - Callback URL: `https://yoursite.com/wp-admin/options-general.php?page=wp-salesforce-integration`
-   - Selected OAuth Scopes:
-     - Access and manage your data (api)
-     - Perform requests on your behalf at any time (refresh_token, offline_access)
-5. Save the Connected App
-6. Note down the Consumer Key (Client ID) and Consumer Secret (Client Secret)
+4. **Configure Salesforce Connection**
+   - Go to **Salesforce** → **Connection** in WordPress admin
+   - Enter your Salesforce OAuth2 credentials
+   - Test the connection
 
-### 2. Create Custom Fields in Salesforce
+## ⚙️ Configuration
 
-Create the following custom fields in your Salesforce object:
+### Salesforce Connection Setup
 
-- `WordPress_Post_ID__c` (Text, External ID)
-- `WordPress_Post_Type__c` (Text)
-- `WordPress_Status__c` (Text)
-- `WordPress_Last_Updated__c` (DateTime)
+1. **Get OAuth2 Credentials**
+   - Log into your Salesforce org
+   - Go to Setup → App Manager
+   - Create a new Connected App
+   - Enable OAuth2 and get your credentials
 
-### 3. Get Security Token
+2. **Configure in WordPress**
+   - Go to **Salesforce** → **Connection**
+   - Enter your OAuth2 details:
+     - Authorization URI
+     - Application ID
+     - Client Secret
+     - Redirect URI
+   - Test the connection
 
-1. In Salesforce, go to your user settings
-2. Click "Reset My Security Token"
-3. Check your email for the security token
+### Field Mapping Configuration
 
-## Configuration
+1. **Access Field Mappings**
+   - Go to **Salesforce** → **Field Mappings**
+   - Select the Salesforce object to configure
 
-### 1. Connection Settings
+2. **Map Fields**
+   - Drag and drop WordPress fields to Salesforce fields
+   - Set field types and validation rules
+   - Test mappings to ensure accuracy
 
-Go to Settings > Salesforce Integration > Connection tab:
+## 🎯 Usage
 
-- **Client ID**: Your Salesforce Connected App Consumer Key
-- **Client Secret**: Your Salesforce Connected App Consumer Secret
-- **Username**: Your Salesforce username
-- **Password**: Your Salesforce password
-- **Security Token**: Your Salesforce security token
-- **Sandbox Mode**: Check if using Salesforce sandbox
+### Automatic Sync
 
-Click "Test Connection" to verify your credentials.
+**User Registration Flow:**
+1. User registers on WordPress
+2. Automatic Lead creation in Salesforce
+3. ACF fields updated with Lead ID
+4. Sync status tracked in audit trail
 
-### 2. Post Type Configuration
+**User Approval Flow:**
+1. Admin approves user
+2. Lead converts to Contact and Account
+3. ACF fields updated with new IDs
+4. Original Lead ID preserved
+5. Sync status updated
 
-In the Post Types tab:
+### Manual Sync Operations
 
-1. Select which post types should be synced
-2. For each post type, configure:
-   - **Salesforce Object**: The Salesforce object name (e.g., "Custom_Object__c")
-   - **External ID Field**: The field to use as external ID (default: "WordPress_Post_ID__c")
+**Individual Post Sync:**
+- Edit any post in WordPress
+- Use the "Salesforce Sync" meta box in the right sidebar
+- Click "Sync to Salesforce" to sync individual posts
+- Check status and view Salesforce ID
 
-### 3. Field Mapping
+**Individual User Sync:**
+- Edit any user in WordPress
+- Use the "Salesforce Sync" section in the user profile
+- Click "Sync to Salesforce" to sync individual users
+- View Lead, Contact, and Account IDs
 
-In the Field Mapping tab:
+**Bulk Sync Operations:**
+- Go to **Salesforce** → **Dashboard**
+- Use "Bulk Sync Users" or "Bulk Sync Posts" buttons
+- Monitor progress and view results summary
 
-1. For each WordPress/ACF field, specify the corresponding Salesforce field
-2. For ACF checkbox fields, choose a transformation strategy:
-   - **Semicolon Separated**: Values joined with semicolons
-   - **Comma Separated**: Values joined with commas
-   - **Pipe Separated**: Values joined with pipes
-   - **JSON Array**: Values as JSON array string
-   - **First Value Only**: Only the first selected value
-   - **Count**: Number of selected values
-   - **Boolean**: True if any values selected, false otherwise
-   - **Custom Delimiter**: Use a custom separator
+## 🏗️ Supported Salesforce Objects
 
-## ACF Checkbox Field Handling
+| Object | Description | WordPress Mapping |
+|--------|-------------|-------------------|
+| **Account** | Company/Organization records | User accounts |
+| **Lead** | Potential customers | New user registrations |
+| **Contact** | Individual people | Approved users |
+| **Sales Listing** | Products/Services for sale | Posts, Waste Listings |
+| **Wanted Listings** | Items wanted by users | Wanted Listings posts |
+| **Offers** | Business offers | Offers posts |
+| **Haulage Offers** | Transportation offers | Haulage Offers posts |
+| **Haulage Loads** | Transportation loads | Haulage Loads posts |
+| **Sample Requests** | Sample requests | Sample Requests posts |
+| **MFI Tests** | Test results | MFI Tests posts |
 
-The plugin provides multiple strategies for handling ACF checkbox fields that aren't compatible with Salesforce boolean fields:
+## 📚 Documentation
 
-### Example: ACF Checkbox Field "Interests"
+- **[Implementation Summary](IMPLEMENTATION_SUMMARY.md)** - Technical implementation details
+- **[Admin Interface Guide](ADMIN_INTERFACE_GUIDE.md)** - Complete admin interface documentation
+- **[Manual Sync Guide](MANUAL_SYNC_GUIDE.md)** - Manual sync operations guide
+- **[ACF Field Setup Guide](ACF_FIELD_SETUP_GUIDE.md)** - ACF field configuration
+- **[Salesforce OAuth Setup Guide](SALESFORCE_OAUTH_SETUP_GUIDE.md)** - OAuth2 setup instructions
+- **[Migration Guide](MIGRATION_GUIDE.md)** - Migration from miniOrange plugin
+- **[Plugin Structure](PLUGIN-STRUCTURE.md)** - Technical architecture overview
+- **[Final Plugin Summary](FINAL_PLUGIN_SUMMARY.md)** - Complete feature overview
 
-If your ACF checkbox field has options like:
-- Web Development
-- Mobile Development
-- Design
-- Marketing
+## 🔧 Development
 
-And a user selects "Web Development" and "Design", here's how each strategy works:
-
-1. **Semicolon Separated**: `Web Development;Design`
-2. **Comma Separated**: `Web Development,Design`
-3. **JSON Array**: `["Web Development","Design"]`
-4. **First Value Only**: `Web Development`
-5. **Count**: `2`
-6. **Boolean**: `true`
-
-## AJAX Support
-
-The plugin automatically handles AJAX post updates through several mechanisms:
-
-1. **WordPress AJAX Hooks**: Listens for standard WordPress AJAX save actions
-2. **ACF AJAX**: Handles ACF field saves triggered via AJAX
-3. **Custom AJAX Endpoint**: Provides a custom AJAX endpoint for manual syncs
-
-### Manual AJAX Sync
-
-You can trigger a sync via AJAX using this JavaScript:
-
-```javascript
-jQuery.post(ajaxurl, {
-    action: 'wsi_sync_post',
-    nonce: 'your_nonce',
-    post_id: postId
-}, function(response) {
-    if (response.success) {
-        console.log('Sync successful');
-    } else {
-        console.log('Sync failed: ' + response.data);
-    }
-});
+### File Structure
+```
+wp-salesforce-integration/
+├── wp-salesforce-integration.php     # Main plugin file
+├── includes/                         # PHP classes (22 files)
+├── assets/                          # CSS and JavaScript
+├── Objects/                         # CSV files for Salesforce objects
+├── *.json                          # Field mapping data
+├── *.md                            # Documentation files
+└── waste-trading-config.php        # Custom configuration
 ```
 
-## Monitoring and Logs
+### Key Classes
+- `WSI_Salesforce_API` - Core Salesforce API integration
+- `WSI_Manual_Sync` - Manual sync controls
+- `WSI_Admin_Dashboard` - Main admin interface
+- `WSI_Field_Mapping_Manager` - Field mapping management
+- `WSI_Audit_Trail` - Operation logging
+- `WSI_ACF_Field_Setup` - ACF field management
 
-### Sync Logs
-
-The Sync Logs tab shows:
-- Recent sync activity
-- Success/failure status
-- Trigger type (save_post, ajax, manual, etc.)
-- Timestamps
-- Manual re-sync capability
-
-### Error Handling
-
-The plugin includes comprehensive error handling:
-
-- **Connection Errors**: Invalid credentials or network issues
-- **Field Mapping Errors**: Missing or invalid field mappings
-- **Data Transformation Errors**: Issues converting data formats
-- **Salesforce API Errors**: Salesforce-specific error messages
-
-All errors are logged and can be viewed in the admin interface.
-
-## Troubleshooting
+## 🐛 Troubleshooting
 
 ### Common Issues
 
-1. **Authentication Failed**
-   - Verify your Salesforce credentials
-   - Check if your security token is correct
-   - Ensure your Connected App is properly configured
+**Connection Problems:**
+- Verify OAuth2 credentials are correct
+- Check Salesforce org permissions
+- Ensure API access is enabled
 
-2. **Field Mapping Issues**
-   - Verify Salesforce field names are correct
-   - Check field types match (text fields can't store arrays)
-   - Ensure external ID field is properly configured
+**Sync Failures:**
+- Check field mappings are correct
+- Verify required fields are present
+- Review audit trail for error details
 
-3. **Checkbox Fields Not Syncing**
-   - Choose appropriate transformation strategy
-   - Verify target Salesforce field can accept the transformed data
-   - Check field mapping configuration
-
-4. **AJAX Updates Not Syncing**
-   - Ensure the plugin hooks are properly loaded
-   - Check for JavaScript errors in browser console
-   - Verify AJAX actions are being triggered
+**ACF Field Issues:**
+- Ensure ACF plugin is installed and active
+- Check field group configuration
+- Verify field names are correct
 
 ### Debug Mode
-
-Enable debug logging in the plugin settings to get detailed information about sync operations.
-
-## API Reference
-
-### Hooks and Filters
-
-#### Actions
-
-- `wsi_before_sync`: Fired before a post is synced to Salesforce
-- `wsi_after_sync`: Fired after a successful sync
-- `wsi_sync_failed`: Fired when a sync fails
-
-#### Filters
-
-- `wsi_field_mappings`: Modify field mappings before sync
-- `wsi_salesforce_data`: Modify data before sending to Salesforce
-- `wsi_should_sync_post`: Determine if a post should be synced
-
-### Custom Integration
-
+Enable WordPress debug mode to see detailed error messages:
 ```php
-// Add custom field mapping
-add_filter('wsi_field_mappings', function($mappings) {
-    $mappings['custom_field'] = array(
-        'salesforce_field' => 'Custom_Field__c',
-        'checkbox_strategy' => 'semicolon_separated'
-    );
-    return $mappings;
-});
-
-// Modify data before sync
-add_filter('wsi_salesforce_data', function($data, $post_id) {
-    $data['Custom_Field__c'] = 'Custom Value';
-    return $data;
-}, 10, 2);
-
-// Skip sync for certain posts
-add_filter('wsi_should_sync_post', function($should_sync, $post_id) {
-    $post = get_post($post_id);
-    if ($post->post_status === 'draft') {
-        return false;
-    }
-    return $should_sync;
-}, 10, 2);
+define('WP_DEBUG', true);
+define('WP_DEBUG_LOG', true);
 ```
 
-## Support
+## 🤝 Contributing
 
-For support and feature requests, please contact the plugin developer or create an issue in the plugin repository.
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## License
+## 📄 License
 
-This plugin is licensed under the GPL v2 or later.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Changelog
+## 🎉 Changelog
 
-### Version 1.0.0
-- Initial release
-- ACF checkbox field transformation support
-- AJAX update handling
-- Comprehensive admin interface
-- Error handling and logging system
+### 1.0.0 (2024-01-XX)
+- **Initial Release**
+- Complete WordPress-Salesforce integration
+- 10 Salesforce objects supported
+- 705 Salesforce fields mapped from CSV data
+- Individual post and user sync controls
+- Bulk sync operations from dashboard
+- ACF field auto-creation on activation
+- OAuth2 authentication with custom URLs
+- Migration system from miniOrange plugin
+- Comprehensive admin interface with health monitoring
+- Audit trail logging for all operations
+- Visual field mapping management
+- Manual sync controls with status monitoring
+- Robust error handling and recovery
+- Complete documentation and setup guides
+
+---
+
+**Made with ❤️ for the WordPress and Salesforce communities**
