@@ -1,0 +1,40 @@
+﻿QualifiedApiName,DeveloperName,DataType
+Id,Id,Lookup()
+OwnerId,Owner,"Lookup(User,Group)"
+IsDeleted,IsDeleted,Checkbox
+Name,Name,Text(80)
+CurrencyIsoCode,CurrencyIsoCode,Picklist
+CreatedDate,CreatedDate,Date/Time
+CreatedById,CreatedBy,Lookup(User)
+LastModifiedDate,LastModifiedDate,Date/Time
+LastModifiedById,LastModifiedBy,Lookup(User)
+SystemModstamp,SystemModstamp,Date/Time
+LastActivityDate,LastActivityDate,Date
+LastViewedDate,LastViewedDate,Date/Time
+LastReferencedDate,LastReferencedDate,Date/Time
+UserRecordAccessId,UserRecordAccess,Lookup(User Record Access)
+Location_of_Waste__c,Location_of_Waste,Text(100)
+Material_Type__c,Material_Type,Text(100)
+Material_Group__c,Material_Group,Text(100)
+Material__c,Material,Text(100)
+How_its_packaged__c,How_its_packaged,Text(100)
+MFI_Range__c,MFI_Range,Picklist
+How_its_Stored__c,How_its_Stored,Text(100)
+Quantity__c,Quantity,Text(100)
+Quantity_Metric__c,Quantity_Metric,Text(100)
+Frequency__c,Frequency,Picklist
+Guide_Price__c,Guide_Price,Text(100)
+Guide_Price_Currency__c,Guide_Price_Currency,Text(100)
+Comments__c,Comments,Text Area(255)
+Contact__c,Contact,Lookup(Contact)
+Available_From__c,Available_From,Date
+Listing_Status__c,Listing_Status,Picklist
+Listing_Rejection_Reason__c,Listing_Rejection_Reason,Text(100)
+Admin_Wanted__c,Admin_Wanted,Text(100)
+Post_Notes__c,Post_Notes,Text Area(255)
+WT_Listing_ID__c,WT_Listing_ID,Text(100)
+Listing_Link__c,Listing_Link,URL(255)
+End_Date__c,End_Date,Text(100)
+Wt_Author_ID__c,Wt_Author_ID,Text(100)
+Company_Name__c,Company_Name,Text(100)
+Admin_User_Link__c,Admin_User_Link,Formula (Text)

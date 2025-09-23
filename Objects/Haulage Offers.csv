@@ -1,0 +1,41 @@
+﻿QualifiedApiName,DeveloperName,DataType
+Id,Id,Lookup()
+OwnerId,Owner,"Lookup(User,Group)"
+IsDeleted,IsDeleted,Checkbox
+Name,Name,Text(80)
+CurrencyIsoCode,CurrencyIsoCode,Picklist
+CreatedDate,CreatedDate,Date/Time
+CreatedById,CreatedBy,Lookup(User)
+LastModifiedDate,LastModifiedDate,Date/Time
+LastModifiedById,LastModifiedBy,Lookup(User)
+SystemModstamp,SystemModstamp,Date/Time
+LastViewedDate,LastViewedDate,Date/Time
+LastReferencedDate,LastReferencedDate,Date/Time
+UserRecordAccessId,UserRecordAccess,Lookup(User Record Access)
+Customs_Clearance__c,Customs_Clearance,Picklist
+Offer__c,Offer,Lookup(Offers)
+Transport_Provider__c,Transport_Provider,Picklist
+bid_id__c,bid_id,Text(255)
+container_rate_valid_until__c,container_rate_valid_until,Date
+container_type__c,container_type,Picklist
+demurrage__c,demurrage,Picklist
+destination_charges__c,destination_charges,Picklist
+expected__c,expected,Picklist
+haulage__c,haulage,Text(255)
+haulage_currency__c,haulage_currency,Text(255)
+haulage_extras__c,haulage_extras,Text(255)
+haulage_notes__c,haulage_notes,Text Area(255)
+haulage_rejection_reason__c,haulage_rejection_reason,Text(255)
+haulage_total__c,haulage_total,Text(255)
+haulier_listing_status__c,haulier_listing_status,Picklist
+listing_id__c,listing_id,Text(255)
+listing_sold__c,listing_sold,Text(255)
+offer_accepted__c,offer_accepted,Checkbox
+offer_rejected__c,offer_rejected,Checkbox
+post_notes__c,post_notes,Text Area(255)
+so_details__c,so_details,Text Area(255)
+so_pdf__c,so_pdf,Text(255)
+suggested_collection_date__c,suggested_collection_date,Date
+trailer_or_container__c,trailer_or_container,Picklist
+trailer_type__c,trailer_type,Picklist
+wt_haulage_admin__c,wt_haulage_admin,Text(255)

@@ -1,0 +1,72 @@
+# WordPress
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+wp-content/backup-db/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/cache/
+wp-content/debug.log
+
+# Plugin specific
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node modules (if any)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Composer
+vendor/
+composer.lock
+
+# Temporary files
+temp/
+tmp/
+cache/
+
+# Sensitive data
+.env
+.env.local
+.env.production
+.env.staging
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# Log files
+*.log
+logs/
+
+# Database dumps
+*.sql
+*.sqlite
+*.db
+
+# Excel files (keep the original for reference)
+# Copy of Objects and fields.xlsx
+
+# Development files
+dev/
+test/
+tests/
+phpunit.xml
+.phpunit.result.cache

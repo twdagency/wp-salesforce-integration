@@ -1,0 +1,6417 @@
+{
+  "Account": {
+    "fields": [
+      {
+        "name": "CS_APP__Never_Match__c",
+        "developer_name": "Never_Match",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Registered_Waste_Exemption_Number__c",
+        "developer_name": "Registered_Waste_Exemption_Number",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Waste_Carrier_Licence_Start_Date__c",
+        "developer_name": "Waste_Carrier_Licence_Start_Date",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Credit_Limit_Requested__c",
+        "developer_name": "Credit_Limit_Requested",
+        "description": "",
+        "data_type": "Currency(16, 2)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Start_Date__c",
+        "developer_name": "Start_Date",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Account_Form_Main_Contact_Id__c",
+        "developer_name": "Account_Form_Main_Contact_Id",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Account_License_Number__c",
+        "developer_name": "Account_License_Number",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "WasteTrade_Type__c",
+        "developer_name": "WasteTrade_Type",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "EORI_Number__c",
+        "developer_name": "EORI_Number",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Company_Status__c",
+        "developer_name": "Company_Status",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__PNumber__c",
+        "developer_name": "PNumber",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Primary_Licence_Type__c",
+        "developer_name": "Primary_Licence_Type",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Account_Form_Submitted_Position__c",
+        "developer_name": "Account_Form_Submitted_Position",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Cipher_Text__c",
+        "developer_name": "Cipher_Text",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__International_Score__c",
+        "developer_name": "International_Score",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "accorto__PaymentTermAR__c",
+        "developer_name": "PaymentTermAR",
+        "description": "Accorto Billing default",
+        "data_type": "Lookup()",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Billing_and_Shipping_Address_Identical__c",
+        "developer_name": "Billing_and_Shipping_Address_Identical",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "accorto__Tax__c",
+        "developer_name": "Tax",
+        "description": "Customer Invoice (Receivables) Tax",
+        "data_type": "Lookup()",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Company_VAT_Number__c",
+        "developer_name": "Company_VAT_Number",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Subsidiary_Source__c",
+        "developer_name": "Subsidiary_Source",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "IBAN__c",
+        "developer_name": "IBAN",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Subsidiary_Templates__c",
+        "developer_name": "Subsidiary_Templates",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Environmental_Permit_Start_Date__c",
+        "developer_name": "Environmental_Permit_Start_Date",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Facility_Permit_End_Date__c",
+        "developer_name": "Facility_Permit_End_Date",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Supplier_Code__c",
+        "developer_name": "Supplier_Code",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Payment_Terms_Days__c",
+        "developer_name": "Payment_Terms_Days",
+        "description": "",
+        "data_type": "Number(4, 0)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Registered_Waste_Exemption_End_Date__c",
+        "developer_name": "Registered_Waste_Exemption_End_Date",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Complete_Account__c",
+        "developer_name": "Complete_Account",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Bank_Account_Number__c",
+        "developer_name": "Bank_Account_Number",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Disposal_Code__c",
+        "developer_name": "Disposal_Code",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Risk_Score__c",
+        "developer_name": "Risk_Score",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Currency__c",
+        "developer_name": "Currency",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Account_Form_Submitted_By__c",
+        "developer_name": "Account_Form_Submitted_By",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Archived__c",
+        "developer_name": "Archived",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Net_Worth__c",
+        "developer_name": "Net_Worth",
+        "description": "",
+        "data_type": "Number(16, 2)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Local_Council_Authority__c",
+        "developer_name": "Local_Council_Authority",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Waste_Carrier_Licence_Number__c",
+        "developer_name": "Waste_Carrier_Licence_Number",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Facility_Code__c",
+        "developer_name": "Facility_Code",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Environmental_Permit_Number__c",
+        "developer_name": "Environmental_Permit_Number",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Account_Number__c",
+        "developer_name": "Account_Number",
+        "description": "",
+        "data_type": "Auto Number",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "accorto__TaxLocation__c",
+        "developer_name": "TaxLocation",
+        "description": "Tax Location of the Account",
+        "data_type": "Lookup()",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Facility_Permit_Start_Date__c",
+        "developer_name": "Facility_Permit_Start_Date",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "accorto__PaymentTermAP__c",
+        "developer_name": "PaymentTermAP",
+        "description": "Accorto Billing default",
+        "data_type": "Lookup()",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Sort_Code__c",
+        "developer_name": "Sort_Code",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Account_Region__c",
+        "developer_name": "Account_Region",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Account_License_End_Date__c",
+        "developer_name": "Account_License_End_Date",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Score_Description__c",
+        "developer_name": "Score_Description",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Days_Beyond_Term__c",
+        "developer_name": "Days_Beyond_Term",
+        "description": "",
+        "data_type": "Number(18, 0)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Countries_Shipped_To__c",
+        "developer_name": "Countries_Shipped_To",
+        "description": "",
+        "data_type": "Long Text Area(32768)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Activity_Description__c",
+        "developer_name": "Activity_Description",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Account_Form_Main_Site_Id__c",
+        "developer_name": "Account_Form_Main_Site_Id",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Account_License_Start_Date__c",
+        "developer_name": "Account_License_Start_Date",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Waste_Carrier_Licence_End_Date__c",
+        "developer_name": "Waste_Carrier_Licence_End_Date",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Credit_Limit__c",
+        "developer_name": "Credit_Limit",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Import_Clearance__c",
+        "developer_name": "Import_Clearance",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Account_Form_Main_Contact_Name__c",
+        "developer_name": "Account_Form_Main_Contact_Name",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Address__c",
+        "developer_name": "Address",
+        "description": "",
+        "data_type": "Formula (Text)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Environmental_Permit_End_Date__c",
+        "developer_name": "Environmental_Permit_End_Date",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Dual_Trading_Primary_Type__c",
+        "developer_name": "Dual_Trading_Primary_Type",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Engagement_Source_URL__c",
+        "developer_name": "Engagement_Source_URL",
+        "description": "",
+        "data_type": "URL(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Facility_Permit_Number__c",
+        "developer_name": "Facility_Permit_Number",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Container__c",
+        "developer_name": "Container",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Export_Clearance__c",
+        "developer_name": "Export_Clearance",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Account_Form_Submitted__c",
+        "developer_name": "Account_Form_Submitted",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Business_Development_Representative__c",
+        "developer_name": "Business_Development_Representative",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "accorto__TaxExemptionNo__c",
+        "developer_name": "TaxExemptionNo",
+        "description": "Tax Exception Number",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Account_Form_Current_Section__c",
+        "developer_name": "Account_Form_Current_Section",
+        "description": "",
+        "data_type": "Number(18, 0)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Last_Updated__c",
+        "developer_name": "Last_Updated",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "accorto__Billing_CC__c",
+        "developer_name": "Billing_CC",
+        "description": "Billing email copy list - list of emails, separated by commas - used when sending the invoice",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Report_Country_Code__c",
+        "developer_name": "Report_Country_Code",
+        "description": "",
+        "data_type": "Text(3)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Activity_Code__c",
+        "developer_name": "Activity_Code",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Company_Registration_Number__c",
+        "developer_name": "Company_Registration_Number",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Shipping_Type__c",
+        "developer_name": "Shipping_Type",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Registered_Company_Name__c",
+        "developer_name": "Registered_Company_Name",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Credit_Limit_Offered__c",
+        "developer_name": "Credit_Limit_Offered",
+        "description": "",
+        "data_type": "Currency(16, 2)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Sales_Representative__c",
+        "developer_name": "Sales_Representative",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Walking_Floor__c",
+        "developer_name": "Walking_Floor",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Account_Form_Submission_Date__c",
+        "developer_name": "Account_Form_Submission_Date",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Verified__c",
+        "developer_name": "Verified",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Connect_Id__c",
+        "developer_name": "Connect_Id",
+        "description": "",
+        "data_type": "Text(255)  (External ID)",
+        "required": false,
+        "is_external_id": true,
+        "is_lookup": false
+      },
+      {
+        "name": "Account_Form_URL__c",
+        "developer_name": "Account_Form_URL",
+        "description": "",
+        "data_type": "Formula (Text)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Language_Code__c",
+        "developer_name": "Language_Code",
+        "description": "",
+        "data_type": "Text(3)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Provider_Description__c",
+        "developer_name": "Provider_Description",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Country__c",
+        "developer_name": "Country",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "accorto__TaxEntityUseCode__c",
+        "developer_name": "TaxEntityUseCode",
+        "description": "Tax Entity/Use Code for Tax Integration",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "accorto__TaxpayerNumber__c",
+        "developer_name": "TaxpayerNumber",
+        "description": "Taxpayer EIN or SSN",
+        "data_type": "Text(30)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Bank_Account_Name__c",
+        "developer_name": "Bank_Account_Name",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Registered_Waste_Exemption_Start_Date__c",
+        "developer_name": "Registered_Waste_Exemption_Start_Date",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Last_Cleansed_Date__c",
+        "developer_name": "Last_Cleansed_Date",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Reason_Code__c",
+        "developer_name": "Reason_Code",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Proprietors_Partners_Name__c",
+        "developer_name": "Proprietors_Partners_Name",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Territory_Index__c",
+        "developer_name": "Territory_Index",
+        "description": "",
+        "data_type": "Number(3, 0)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Curtainsider_Trailer__c",
+        "developer_name": "Curtainsider_Trailer",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Id",
+        "developer_name": "Id",
+        "description": "",
+        "data_type": "Lookup()",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "IsDeleted",
+        "developer_name": "IsDeleted",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "MasterRecordId",
+        "developer_name": "MasterRecord",
+        "description": "",
+        "data_type": "Lookup(Account)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Name",
+        "developer_name": "Name",
+        "description": "",
+        "data_type": "Name",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Type",
+        "developer_name": "Type",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "ParentId",
+        "developer_name": "Parent",
+        "description": "",
+        "data_type": "Hierarchy",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "BillingAddress",
+        "developer_name": "BillingAddress",
+        "description": "",
+        "data_type": "Address",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "ShippingAddress",
+        "developer_name": "ShippingAddress",
+        "description": "",
+        "data_type": "Address",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Phone",
+        "developer_name": "Phone",
+        "description": "",
+        "data_type": "Phone",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Website",
+        "developer_name": "Website",
+        "description": "",
+        "data_type": "URL(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "PhotoUrl",
+        "developer_name": "PhotoUrl",
+        "description": "",
+        "data_type": "URL(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Sic",
+        "developer_name": "Sic",
+        "description": "",
+        "data_type": "Text(20)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Industry",
+        "developer_name": "Industry",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "NumberOfEmployees",
+        "developer_name": "NumberOfEmployees",
+        "description": "",
+        "data_type": "Number(8, 0)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Description",
+        "developer_name": "Description",
+        "description": "",
+        "data_type": "Long Text Area(32000)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CurrencyIsoCode",
+        "developer_name": "CurrencyIsoCode",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "OwnerId",
+        "developer_name": "Owner",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "CreatedDate",
+        "developer_name": "CreatedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CreatedById",
+        "developer_name": "CreatedBy",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "LastModifiedDate",
+        "developer_name": "LastModifiedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastModifiedById",
+        "developer_name": "LastModifiedBy",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "SystemModstamp",
+        "developer_name": "SystemModstamp",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastActivityDate",
+        "developer_name": "LastActivityDate",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastViewedDate",
+        "developer_name": "LastViewedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastReferencedDate",
+        "developer_name": "LastReferencedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "UserRecordAccessId",
+        "developer_name": "UserRecordAccess",
+        "description": "",
+        "data_type": "Lookup(User Record Access)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Jigsaw",
+        "developer_name": "Jigsaw",
+        "description": "",
+        "data_type": "Text(20)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "JigsawCompanyId",
+        "developer_name": "JigsawCompany",
+        "description": "",
+        "data_type": "External Lookup",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "AccountSource",
+        "developer_name": "AccountSource",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "SicDesc",
+        "developer_name": "SicDesc",
+        "description": "",
+        "data_type": "Text(80)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "ActivityMetricId",
+        "developer_name": "ActivityMetric",
+        "description": "",
+        "data_type": "Lookup(Activity Metric)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "ActivityMetricRollupId",
+        "developer_name": "ActivityMetricRollup",
+        "description": "",
+        "data_type": "Lookup(Activity Metric Rollup)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "IsPriorityRecord",
+        "developer_name": "IsPriorityRecord",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      }
+    ],
+    "description": "Salesforce Account object",
+    "total_fields": 126,
+    "csv_file": "Account.csv"
+  },
+  "Contact": {
+    "fields": [
+      {
+        "name": "SYNTHETIC_RUBBER__c",
+        "developer_name": "SYNTHETIC_RUBBER",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__first_search_term__c",
+        "developer_name": "first_search_term",
+        "description": "If a Prospects first touch was the result of a search, this field contains the search term.",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "sansancard__CreatedByScanToSalesforce__c",
+        "developer_name": "CreatedByScanToSalesforce",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "No_Longer_With_Company__c",
+        "developer_name": "No_Longer_With_Company",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Full_Name_Link__c",
+        "developer_name": "Full_Name_Link",
+        "description": "",
+        "data_type": "Formula (Text)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "PC__c",
+        "developer_name": "PC",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Site_Role__c",
+        "developer_name": "Site_Role",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "FIBRE_KRAFT_GRADES__c",
+        "developer_name": "FIBRE_KRAFT_GRADES",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Phone_Opt_In__c",
+        "developer_name": "Phone_Opt_In",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__campaign__c",
+        "developer_name": "campaign",
+        "description": "The Account Engagement Campaign represents the first marketing touch with a prospect. It may be a campaign associated with your web site, landing page, paid search initiative, or any other marketing effort. Prospects may only be associated with one Account Engagement campaign. This value can later be changed manually or via an Automation Rule.",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "PE__c",
+        "developer_name": "PE",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__first_touch_url__c",
+        "developer_name": "first_touch_url",
+        "description": "The value of the referrer for the first tracked request made by a Prospect.",
+        "data_type": "Long Text Area(65000)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__Needs_Score_Synced__c",
+        "developer_name": "Needs_Score_Synced",
+        "description": "This field is no longer used.",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__score__c",
+        "developer_name": "score",
+        "description": "The Account Engagement score is based on implicit buying signals a lead demonstrates through his or her activities and responses to your marketing efforts. The higher the score, the more active the lead has been. A combination of score (implicit buying signals) and grade (explicit factors) helps you prioritize your prospects. Score, like grade, is calculated within the Account Engagement system and cannot be edited in Salesforce.com.",
+        "data_type": "Number(18, 0)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "EPS__c",
+        "developer_name": "EPS",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__utm_source__c",
+        "developer_name": "utm_source",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "OTHER_MIX__c",
+        "developer_name": "OTHER_MIX",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "PA__c",
+        "developer_name": "PA",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__utm_campaign__c",
+        "developer_name": "utm_campaign",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "FIBRE_SPECIAL_GRADES__c",
+        "developer_name": "FIBRE_SPECIAL_GRADES",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "PS__c",
+        "developer_name": "PS",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__conversion_date__c",
+        "developer_name": "conversion_date",
+        "description": "The date and time of the form, form handler, or landing page submission when an Account Engagement tracked anonymous visitor first became a known prospect.",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "WasteTrade_Company_Interest__c",
+        "developer_name": "WasteTrade_Company_Interest",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Marketing_Opt_In__c",
+        "developer_name": "Marketing_Opt_In",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__conversion_object_type__c",
+        "developer_name": "conversion_object_type",
+        "description": "The type of object which converted an anonymous visitor into a named prospect (form, form handler, landing page, or video form).",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__last_activity__c",
+        "developer_name": "last_activity",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LDPE__c",
+        "developer_name": "LDPE",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__utm_medium__c",
+        "developer_name": "utm_medium",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "FIBRE_ORDINARY_GRADES__c",
+        "developer_name": "FIBRE_ORDINARY_GRADES",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__pardot_hard_bounced__c",
+        "developer_name": "pardot_hard_bounced",
+        "description": "Boolean that determines whether contact hard bounced.",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "HDPE__c",
+        "developer_name": "HDPE",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Trade_Reference__c",
+        "developer_name": "Trade_Reference",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Full_Name__c",
+        "developer_name": "Full_Name",
+        "description": "",
+        "data_type": "Formula (Text)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "OTHER_SINGLE_SOURCES__c",
+        "developer_name": "OTHER_SINGLE_SOURCES",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "ABS__c",
+        "developer_name": "ABS",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Waste_Trade_User_Id__c",
+        "developer_name": "Waste_Trade_User_Id",
+        "description": "",
+        "data_type": "Text(255)  (External ID) (Unique Case Sensitive)",
+        "required": false,
+        "is_external_id": true,
+        "is_lookup": false
+      },
+      {
+        "name": "FIBRE_HIGH_GRADES__c",
+        "developer_name": "FIBRE_HIGH_GRADES",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__first_activity__c",
+        "developer_name": "first_activity",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Site__c",
+        "developer_name": "Site",
+        "description": "",
+        "data_type": "Lookup(Site)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Text_Opt_In__c",
+        "developer_name": "Text_Opt_In",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "NON_FERROUS_METAL__c",
+        "developer_name": "NON_FERROUS_METAL",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__Pardot_Last_Scored_At__c",
+        "developer_name": "Pardot_Last_Scored_At",
+        "description": "Used for Account Engagement Scoring Categories. Indicates the last time a Scoring Category score was updated for this contact.\n\n            Scoring Categories are used for multi-product engagement scoring in Account Engagement and are available to customers using Account Engagement Pro Edition and Account Engagement Ultimate Edition. Please visit this page for more information on this feature and how to set up Salesforce to view these scores: http://help.pardot.com/customer/portal/articles/2396977-scoring-categories-overview",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__first_search_type__c",
+        "developer_name": "first_search_type",
+        "description": "If a Prospects first touch was the result of a search, this field contains the type of search conducted.",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "PET__c",
+        "developer_name": "PET",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "ACRYLIC__c",
+        "developer_name": "ACRYLIC",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "FERROUS_METAL__c",
+        "developer_name": "FERROUS_METAL",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__conversion_object_name__c",
+        "developer_name": "conversion_object_name",
+        "description": "This is the name of the object (form, form handler, landing page, or video form) that converted an anonymous visitor into a named prospect.",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__comments__c",
+        "developer_name": "comments",
+        "description": "",
+        "data_type": "Long Text Area(32000)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__url__c",
+        "developer_name": "url",
+        "description": "This link takes you directly into the relevant prospect's profile within Account Engagement. From there you can view his or her complete activity history. This URL is generated within the Account Engagement system and cannot be edited in Salesforce.com.",
+        "data_type": "URL(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Subsidiary_Source__c",
+        "developer_name": "Subsidiary_Source",
+        "description": "",
+        "data_type": "Formula (Text)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__grade__c",
+        "developer_name": "grade",
+        "description": "The Account Engagement grade is based on how well a prospect fits your organization's ideal customer profile. Explicit factors such as company size, industry, job title and more help determine this value. A combination of grade (explicit) and score (implicit) can be used to very effectively optimize the sales team's time. Grade, like score, is calculated within the Account Engagement system and cannot be edited in Salesforce.com.",
+        "data_type": "Text(10)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__utm_term__c",
+        "developer_name": "utm_term",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "PVC__c",
+        "developer_name": "PVC",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__created_date__c",
+        "developer_name": "created_date",
+        "description": "The Account Engagement created date represents the date and time at which the Prospect record was created in Account Engagement. This will often differ from your Salesforce.com created date.",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__utm_content__c",
+        "developer_name": "utm_content",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "NATURAL_RUBBER__c",
+        "developer_name": "NATURAL_RUBBER",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__notes__c",
+        "developer_name": "notes",
+        "description": "",
+        "data_type": "Long Text Area(32000)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "PP__c",
+        "developer_name": "PP",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "FIBRE_MEDIUM_GRADES__c",
+        "developer_name": "FIBRE_MEDIUM_GRADES",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Email_Opt_In__c",
+        "developer_name": "Email_Opt_In",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Id",
+        "developer_name": "Id",
+        "description": "",
+        "data_type": "Lookup()",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "IsDeleted",
+        "developer_name": "IsDeleted",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "MasterRecordId",
+        "developer_name": "MasterRecord",
+        "description": "",
+        "data_type": "Lookup(Contact)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "AccountId",
+        "developer_name": "Account",
+        "description": "",
+        "data_type": "Lookup(Account)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Name",
+        "developer_name": "Name",
+        "description": "",
+        "data_type": "Name",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "MailingAddress",
+        "developer_name": "MailingAddress",
+        "description": "",
+        "data_type": "Address",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Phone",
+        "developer_name": "Phone",
+        "description": "",
+        "data_type": "Phone",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Fax",
+        "developer_name": "Fax",
+        "description": "",
+        "data_type": "Phone",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "MobilePhone",
+        "developer_name": "MobilePhone",
+        "description": "",
+        "data_type": "Phone",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "ReportsToId",
+        "developer_name": "ReportsTo",
+        "description": "",
+        "data_type": "Lookup(Contact)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Email",
+        "developer_name": "Email",
+        "description": "",
+        "data_type": "Email",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Title",
+        "developer_name": "Title",
+        "description": "",
+        "data_type": "Text(128)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Department",
+        "developer_name": "Department",
+        "description": "",
+        "data_type": "Text(80)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CurrencyIsoCode",
+        "developer_name": "CurrencyIsoCode",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "OwnerId",
+        "developer_name": "Owner",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "HasOptedOutOfEmail",
+        "developer_name": "HasOptedOutOfEmail",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CreatedDate",
+        "developer_name": "CreatedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CreatedById",
+        "developer_name": "CreatedBy",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "LastModifiedDate",
+        "developer_name": "LastModifiedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastModifiedById",
+        "developer_name": "LastModifiedBy",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "SystemModstamp",
+        "developer_name": "SystemModstamp",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastActivityDate",
+        "developer_name": "LastActivityDate",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastCURequestDate",
+        "developer_name": "LastCURequestDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastCUUpdateDate",
+        "developer_name": "LastCUUpdateDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastViewedDate",
+        "developer_name": "LastViewedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastReferencedDate",
+        "developer_name": "LastReferencedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "UserRecordAccessId",
+        "developer_name": "UserRecordAccess",
+        "description": "",
+        "data_type": "Lookup(User Record Access)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "EmailBouncedReason",
+        "developer_name": "EmailBouncedReason",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "EmailBouncedDate",
+        "developer_name": "EmailBouncedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "IsEmailBounced",
+        "developer_name": "IsEmailBounced",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "PhotoUrl",
+        "developer_name": "PhotoUrl",
+        "description": "",
+        "data_type": "URL(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Jigsaw",
+        "developer_name": "Jigsaw",
+        "description": "",
+        "data_type": "Text(20)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "JigsawContactId",
+        "developer_name": "JigsawContact",
+        "description": "",
+        "data_type": "External Lookup",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "ActivityMetricId",
+        "developer_name": "ActivityMetric",
+        "description": "",
+        "data_type": "Lookup(Activity Metric)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "ActivityMetricRollupId",
+        "developer_name": "ActivityMetricRollup",
+        "description": "",
+        "data_type": "Lookup(Activity Metric Rollup)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "IsPriorityRecord",
+        "developer_name": "IsPriorityRecord",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "ContactSource",
+        "developer_name": "ContactSource",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "TitleType",
+        "developer_name": "TitleType",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "DepartmentGroup",
+        "developer_name": "DepartmentGroup",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "BuyerAttributes",
+        "developer_name": "BuyerAttributes",
+        "description": "",
+        "data_type": "Picklist (Multi-Select)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      }
+    ],
+    "description": "Salesforce Contact object",
+    "total_fields": 100,
+    "csv_file": "Contact.csv"
+  },
+  "Haulage Loads": {
+    "fields": [
+      {
+        "name": "Id",
+        "developer_name": "Id",
+        "description": "",
+        "data_type": "Lookup()",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "OwnerId",
+        "developer_name": "Owner",
+        "description": "",
+        "data_type": "Lookup(User,Group)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "IsDeleted",
+        "developer_name": "IsDeleted",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Name",
+        "developer_name": "Name",
+        "description": "",
+        "data_type": "Text(80)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CurrencyIsoCode",
+        "developer_name": "CurrencyIsoCode",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CreatedDate",
+        "developer_name": "CreatedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CreatedById",
+        "developer_name": "CreatedBy",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "LastModifiedDate",
+        "developer_name": "LastModifiedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastModifiedById",
+        "developer_name": "LastModifiedBy",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "SystemModstamp",
+        "developer_name": "SystemModstamp",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastViewedDate",
+        "developer_name": "LastViewedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastReferencedDate",
+        "developer_name": "LastReferencedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "UserRecordAccessId",
+        "developer_name": "UserRecordAccess",
+        "description": "",
+        "data_type": "Lookup(User Record Access)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Haulage_Offer__c",
+        "developer_name": "Haulage_Offer",
+        "description": "",
+        "data_type": "Lookup(Haulage Offers)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Loading_Photos__c",
+        "developer_name": "Loading_Photos",
+        "description": "",
+        "data_type": "Rich Text Area(32768)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "annex_vii__c",
+        "developer_name": "annex_vii",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "annex_vii_pdf__c",
+        "developer_name": "annex_vii_pdf",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "basel_annex_ix__c",
+        "developer_name": "basel_annex_ix",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "cmr_paperwork__c",
+        "developer_name": "cmr_paperwork",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "cmr_pdf__c",
+        "developer_name": "cmr_pdf",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "collection_date__c",
+        "developer_name": "collection_date",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "commercial_invoice__c",
+        "developer_name": "commercial_invoice",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "destination_country__c",
+        "developer_name": "destination_country",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "duty_of_care__c",
+        "developer_name": "duty_of_care",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "duty_of_care_pdf__c",
+        "developer_name": "duty_of_care_pdf",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "ec_list_of_wastes__c",
+        "developer_name": "ec_list_of_wastes",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "export_country__c",
+        "developer_name": "export_country",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "fc_address_line_2__c",
+        "developer_name": "fc_address_line_2",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "fc_city__c",
+        "developer_name": "fc_city",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "fc_company_name__c",
+        "developer_name": "fc_company_name",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "fc_country__c",
+        "developer_name": "fc_country",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "fc_county__c",
+        "developer_name": "fc_county",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "fc_date_of_transfer__c",
+        "developer_name": "fc_date_of_transfer",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "fc_email__c",
+        "developer_name": "fc_email",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "fc_first_name__c",
+        "developer_name": "fc_first_name",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "fc_means_of_transport__c",
+        "developer_name": "fc_means_of_transport",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "fc_post_code__c",
+        "developer_name": "fc_post_code",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "fc_second_name__c",
+        "developer_name": "fc_second_name",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "fc_street_address__c",
+        "developer_name": "fc_street_address",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "fc_telephone__c",
+        "developer_name": "fc_telephone",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "fc_vehicle_registration__c",
+        "developer_name": "fc_vehicle_registration",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "green_list__c",
+        "developer_name": "green_list",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "green_list_pdf__c",
+        "developer_name": "green_list_pdf",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "gross_weight__c",
+        "developer_name": "gross_weight",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "haulage_bid_id__c",
+        "developer_name": "haulage_bid_id",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "hs_code__c",
+        "developer_name": "hs_code",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "load_invoice__c",
+        "developer_name": "load_invoice",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "load_number__c",
+        "developer_name": "load_number",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "load_status__c",
+        "developer_name": "load_status",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "material__c",
+        "developer_name": "material",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "national_code__c",
+        "developer_name": "national_code",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "net_weight__c",
+        "developer_name": "net_weight",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "number_of_bales__c",
+        "developer_name": "number_of_bales",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "oecd__c",
+        "developer_name": "oecd",
+        "description": "",
+        "data_type": "Text(225)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "packing_list__c",
+        "developer_name": "packing_list",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "packing_slip_pdf__c",
+        "developer_name": "packing_slip_pdf",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pallet_weight__c",
+        "developer_name": "pallet_weight",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "purchase_order__c",
+        "developer_name": "purchase_order",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "sales_order__c",
+        "developer_name": "sales_order",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "sc_address_line_2__c",
+        "developer_name": "sc_address_line_2",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "sc_city__c",
+        "developer_name": "sc_city",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "sc_company_name__c",
+        "developer_name": "sc_company_name",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "sc_country__c",
+        "developer_name": "sc_country",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "sc_county__c",
+        "developer_name": "sc_county",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "sc_date_of_transfer__c",
+        "developer_name": "sc_date_of_transfer",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "sc_email__c",
+        "developer_name": "sc_email",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "sc_first_name__c",
+        "developer_name": "sc_first_name",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "sc_means_of_transport__c",
+        "developer_name": "sc_means_of_transport",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "sc_post_code__c",
+        "developer_name": "sc_post_code",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "sc_second_name__c",
+        "developer_name": "sc_second_name",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "sc_street_address__c",
+        "developer_name": "sc_street_address",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "sc_telephone__c",
+        "developer_name": "sc_telephone",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "sc_vehicle_registration__c",
+        "developer_name": "sc_vehicle_registration",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "seller_agreed_collection_date__c",
+        "developer_name": "seller_agreed_collection_date",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "tc_address_line_2__c",
+        "developer_name": "tc_address_line_2",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "tc_city__c",
+        "developer_name": "tc_city",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "tc_company_name__c",
+        "developer_name": "tc_company_name",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "tc_country__c",
+        "developer_name": "tc_country",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "tc_county__c",
+        "developer_name": "tc_county",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "tc_date_of_transfer__c",
+        "developer_name": "tc_date_of_transfer",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "tc_email__c",
+        "developer_name": "tc_email",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "tc_first_name__c",
+        "developer_name": "tc_first_name",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "tc_last_name__c",
+        "developer_name": "tc_last_name",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "tc_means_of_transport__c",
+        "developer_name": "tc_means_of_transport",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "tc_post_code__c",
+        "developer_name": "tc_post_code",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "tc_street_address__c",
+        "developer_name": "tc_street_address",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "tc_telephone__c",
+        "developer_name": "tc_telephone",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "tc_vehicle_registration__c",
+        "developer_name": "tc_vehicle_registration",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "trailer_number__c",
+        "developer_name": "trailer_number",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      }
+    ],
+    "description": "Salesforce Haulage Loads object",
+    "total_fields": 89,
+    "csv_file": "Haulage Loads.csv"
+  },
+  "Haulage Offers": {
+    "fields": [
+      {
+        "name": "Id",
+        "developer_name": "Id",
+        "description": "",
+        "data_type": "Lookup()",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "OwnerId",
+        "developer_name": "Owner",
+        "description": "",
+        "data_type": "Lookup(User,Group)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "IsDeleted",
+        "developer_name": "IsDeleted",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Name",
+        "developer_name": "Name",
+        "description": "",
+        "data_type": "Text(80)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CurrencyIsoCode",
+        "developer_name": "CurrencyIsoCode",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CreatedDate",
+        "developer_name": "CreatedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CreatedById",
+        "developer_name": "CreatedBy",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "LastModifiedDate",
+        "developer_name": "LastModifiedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastModifiedById",
+        "developer_name": "LastModifiedBy",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "SystemModstamp",
+        "developer_name": "SystemModstamp",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastViewedDate",
+        "developer_name": "LastViewedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastReferencedDate",
+        "developer_name": "LastReferencedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "UserRecordAccessId",
+        "developer_name": "UserRecordAccess",
+        "description": "",
+        "data_type": "Lookup(User Record Access)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Customs_Clearance__c",
+        "developer_name": "Customs_Clearance",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Offer__c",
+        "developer_name": "Offer",
+        "description": "",
+        "data_type": "Lookup(Offers)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Transport_Provider__c",
+        "developer_name": "Transport_Provider",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "bid_id__c",
+        "developer_name": "bid_id",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "container_rate_valid_until__c",
+        "developer_name": "container_rate_valid_until",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "container_type__c",
+        "developer_name": "container_type",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "demurrage__c",
+        "developer_name": "demurrage",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "destination_charges__c",
+        "developer_name": "destination_charges",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "expected__c",
+        "developer_name": "expected",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "haulage__c",
+        "developer_name": "haulage",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "haulage_currency__c",
+        "developer_name": "haulage_currency",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "haulage_extras__c",
+        "developer_name": "haulage_extras",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "haulage_notes__c",
+        "developer_name": "haulage_notes",
+        "description": "",
+        "data_type": "Text Area(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "haulage_rejection_reason__c",
+        "developer_name": "haulage_rejection_reason",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "haulage_total__c",
+        "developer_name": "haulage_total",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "haulier_listing_status__c",
+        "developer_name": "haulier_listing_status",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "listing_id__c",
+        "developer_name": "listing_id",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "listing_sold__c",
+        "developer_name": "listing_sold",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "offer_accepted__c",
+        "developer_name": "offer_accepted",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "offer_rejected__c",
+        "developer_name": "offer_rejected",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "post_notes__c",
+        "developer_name": "post_notes",
+        "description": "",
+        "data_type": "Text Area(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "so_details__c",
+        "developer_name": "so_details",
+        "description": "",
+        "data_type": "Text Area(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "so_pdf__c",
+        "developer_name": "so_pdf",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "suggested_collection_date__c",
+        "developer_name": "suggested_collection_date",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "trailer_or_container__c",
+        "developer_name": "trailer_or_container",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "trailer_type__c",
+        "developer_name": "trailer_type",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "wt_haulage_admin__c",
+        "developer_name": "wt_haulage_admin",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      }
+    ],
+    "description": "Salesforce Haulage Offers object",
+    "total_fields": 40,
+    "csv_file": "Haulage Offers.csv"
+  },
+  "Lead": {
+    "fields": [
+      {
+        "name": "PA__c",
+        "developer_name": "PA",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__pardot_hard_bounced__c",
+        "developer_name": "pardot_hard_bounced",
+        "description": "Boolean that determines whether lead hard bounced.",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Jigsaw",
+        "developer_name": "Jigsaw",
+        "description": "",
+        "data_type": "Text(20)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__utm_content__c",
+        "developer_name": "utm_content",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CurrencyIsoCode",
+        "developer_name": "CurrencyIsoCode",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Marketing_Source__c",
+        "developer_name": "Marketing_Source",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "SmartScan_Questions__c",
+        "developer_name": "SmartScan_Questions",
+        "description": "",
+        "data_type": "Long Text Area(32768)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "IsPriorityRecord",
+        "developer_name": "IsPriorityRecord",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Website",
+        "developer_name": "Website",
+        "description": "",
+        "data_type": "URL(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "HDPE__c",
+        "developer_name": "HDPE",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Provider_Description__c",
+        "developer_name": "Provider_Description",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "HasOptedOutOfEmail",
+        "developer_name": "HasOptedOutOfEmail",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Marketing_Opt_In__c",
+        "developer_name": "Marketing_Opt_In",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Currency__c",
+        "developer_name": "Currency",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "FERROUS_METAL__c",
+        "developer_name": "FERROUS_METAL",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastViewedDate",
+        "developer_name": "LastViewedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__grade__c",
+        "developer_name": "grade",
+        "description": "The Account Engagement grade is based on how well a prospect fits your organization's ideal customer profile. Explicit factors such as company size, industry, job title and more help determine this value. A combination of grade (explicit) and score (implicit) can be used to very effectively optimize the sales team's time. Grade, like score, is calculated within the Account Engagement system and cannot be edited in Salesforce.com.",
+        "data_type": "Text(10)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Business_Development_Representative__c",
+        "developer_name": "Business_Development_Representative",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "FIBRE_ORDINARY_GRADES__c",
+        "developer_name": "FIBRE_ORDINARY_GRADES",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Reason_Code__c",
+        "developer_name": "Reason_Code",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Days_Beyond_Term__c",
+        "developer_name": "Days_Beyond_Term",
+        "description": "",
+        "data_type": "Number(18, 0)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__first_search_term__c",
+        "developer_name": "first_search_term",
+        "description": "If a Prospects first touch was the result of a search, the field holds the term that was searched on.",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "PS__c",
+        "developer_name": "PS",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "ConvertedAccountId",
+        "developer_name": "ConvertedAccount",
+        "description": "",
+        "data_type": "Lookup(Account)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Sales_Representative_Name__c",
+        "developer_name": "Sales_Representative_Name",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Job_Title__c",
+        "developer_name": "Job_Title",
+        "description": "",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__conversion_object_type__c",
+        "developer_name": "conversion_object_type",
+        "description": "The type of object which converted an anonymous visitor into a named prospect (form, form handler, landing page, or video form).",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__score__c",
+        "developer_name": "score",
+        "description": "The Account Engagement score is based on implicit buying signals a lead demonstrates through his or her activities and responses to your marketing efforts. The higher the score, the more active the lead has been. A combination of score (implicit buying signals) and grade (explicit factors) helps you prioritize your prospects. Score, like grade, is calculated within the Account Engagement system and cannot be edited in Salesforce.com.",
+        "data_type": "Number(18, 0)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Phone",
+        "developer_name": "Phone",
+        "description": "",
+        "data_type": "Phone",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "PC__c",
+        "developer_name": "PC",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "IsUnreadByOwner",
+        "developer_name": "IsUnreadByOwner",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "sansancard__CreatedByScanToSalesforce__c",
+        "developer_name": "CreatedByScanToSalesforce",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "SYNTHETIC_RUBBER__c",
+        "developer_name": "SYNTHETIC_RUBBER",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Industry",
+        "developer_name": "Industry",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "OTHER_SINGLE_SOURCES__c",
+        "developer_name": "OTHER_SINGLE_SOURCES",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "EmailBouncedReason",
+        "developer_name": "EmailBouncedReason",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "FIBRE_SPECIAL_GRADES__c",
+        "developer_name": "FIBRE_SPECIAL_GRADES",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Company",
+        "developer_name": "Company",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "WasteTrade_Company_Interest__c",
+        "developer_name": "WasteTrade_Company_Interest",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Registered_Company_Name__c",
+        "developer_name": "Registered_Company_Name",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastActivityDate",
+        "developer_name": "LastActivityDate",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__comments__c",
+        "developer_name": "comments",
+        "description": "",
+        "data_type": "Long Text Area(32000)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastModifiedDate",
+        "developer_name": "LastModifiedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__Needs_Score_Synced__c",
+        "developer_name": "Needs_Score_Synced",
+        "description": "This field is no longer used.",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Email_Opt_In__c",
+        "developer_name": "Email_Opt_In",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastReferencedDate",
+        "developer_name": "LastReferencedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__last_activity__c",
+        "developer_name": "last_activity",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__International_Score__c",
+        "developer_name": "International_Score",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "WasteTrade_User_Id__c",
+        "developer_name": "WasteTrade_User_Id",
+        "description": "",
+        "data_type": "Text(255)  (External ID)",
+        "required": false,
+        "is_external_id": true,
+        "is_lookup": false
+      },
+      {
+        "name": "LeadSource",
+        "developer_name": "LeadSource",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "EPS__c",
+        "developer_name": "EPS",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "FIBRE_HIGH_GRADES__c",
+        "developer_name": "FIBRE_HIGH_GRADES",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "ActivityMetricId",
+        "developer_name": "ActivityMetric",
+        "description": "",
+        "data_type": "Lookup(Activity Metric)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "CS_APP__Report_Country_Code__c",
+        "developer_name": "Report_Country_Code",
+        "description": "",
+        "data_type": "Text(3)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "JigsawContactId",
+        "developer_name": "JigsawContact",
+        "description": "",
+        "data_type": "External Lookup",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__utm_medium__c",
+        "developer_name": "utm_medium",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Lead_Direction__c",
+        "developer_name": "Lead_Direction",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "WasteTrade_Type_Other__c",
+        "developer_name": "WasteTrade_Type_Other",
+        "description": "",
+        "data_type": "Text(255)  (External ID)",
+        "required": false,
+        "is_external_id": true,
+        "is_lookup": false
+      },
+      {
+        "name": "MasterRecordId",
+        "developer_name": "MasterRecord",
+        "description": "",
+        "data_type": "Lookup(Lead)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Subsidiary_Source__c",
+        "developer_name": "Subsidiary_Source",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "IsConverted",
+        "developer_name": "IsConverted",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Send_Text__c",
+        "developer_name": "Send_Text",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "ConvertedContactId",
+        "developer_name": "ConvertedContact",
+        "description": "",
+        "data_type": "Lookup(Contact)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Verified__c",
+        "developer_name": "Verified",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "ActivityMetricRollupId",
+        "developer_name": "ActivityMetricRollup",
+        "description": "",
+        "data_type": "Lookup(Activity Metric Rollup)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "CS_APP__Risk_Score__c",
+        "developer_name": "Risk_Score",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__first_search_type__c",
+        "developer_name": "first_search_type",
+        "description": "If a Prospects first touch was the result of a search, this field contains the type of search conducted.",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "PhotoUrl",
+        "developer_name": "PhotoUrl",
+        "description": "",
+        "data_type": "URL(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Company_VAT_Check_Complete__c",
+        "developer_name": "Company_VAT_Check_Complete",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "PP__c",
+        "developer_name": "PP",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Company_VAT_Number__c",
+        "developer_name": "Company_VAT_Number",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Company_Status__c",
+        "developer_name": "Company_Status",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CreatedDate",
+        "developer_name": "CreatedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Source_Campaign_Id__c",
+        "developer_name": "Source_Campaign_Id",
+        "description": "",
+        "data_type": "Text(18)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CampaignId",
+        "developer_name": "Campaign",
+        "description": "",
+        "data_type": "Lookup(Campaign)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "pi__created_date__c",
+        "developer_name": "created_date",
+        "description": "The Account Engagement created date represents the date and time at which the Prospect record was created in Account Engagement. This will often differ from your Salesforce.com created date.",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "EmailBouncedDate",
+        "developer_name": "EmailBouncedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "NATURAL_RUBBER__c",
+        "developer_name": "NATURAL_RUBBER",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Language_Code__c",
+        "developer_name": "Language_Code",
+        "description": "",
+        "data_type": "Text(3)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__url__c",
+        "developer_name": "url",
+        "description": "This link takes you directly into the relevant prospect's profile within Account Engagement. From there you can view his or her complete activity history. This URL is generated within the Account Engagement system and cannot be edited in Salesforce.com.",
+        "data_type": "URL(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastModifiedById",
+        "developer_name": "LastModifiedBy",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "pi__Pardot_Last_Scored_At__c",
+        "developer_name": "Pardot_Last_Scored_At",
+        "description": "Used for Account Engagement Scoring Categories. Indicates the last time a Scoring Category score was updated for this lead.\n\n            Scoring Categories are used for multi-product engagement scoring in Account Engagement and are available to customers using Account Engagement Pro Edition and Account Engagement Ultimate Edition. Please visit this page for more information on this feature and how to set up Salesforce to view these scores: http://help.pardot.com/customer/portal/articles/2396977-scoring-categories-overview",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__conversion_date__c",
+        "developer_name": "conversion_date",
+        "description": "The date and time of the form, form handler, or landing page submission when an Account Engagement tracked anonymous visitor first became a known prospect.",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "FIBRE_KRAFT_GRADES__c",
+        "developer_name": "FIBRE_KRAFT_GRADES",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Email",
+        "developer_name": "Email",
+        "description": "",
+        "data_type": "Email",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "PVC__c",
+        "developer_name": "PVC",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__utm_source__c",
+        "developer_name": "utm_source",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "MobilePhone",
+        "developer_name": "MobilePhone",
+        "description": "",
+        "data_type": "Phone",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "PET__c",
+        "developer_name": "PET",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Engagement_Source_URL__c",
+        "developer_name": "Engagement_Source_URL",
+        "description": "",
+        "data_type": "URL(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "UserRecordAccessId",
+        "developer_name": "UserRecordAccess",
+        "description": "",
+        "data_type": "Lookup(User Record Access)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "pi__notes__c",
+        "developer_name": "notes",
+        "description": "",
+        "data_type": "Long Text Area(32000)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "OwnerId",
+        "developer_name": "Owner",
+        "description": "",
+        "data_type": "Lookup(User,Group)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Text_Opt_In__c",
+        "developer_name": "Text_Opt_In",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Type__c",
+        "developer_name": "Type",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Score_Description__c",
+        "developer_name": "Score_Description",
+        "description": "",
+        "data_type": "Text(40)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Connect_Id__c",
+        "developer_name": "Connect_Id",
+        "description": "",
+        "data_type": "Text(255)  (External ID)",
+        "required": false,
+        "is_external_id": true,
+        "is_lookup": false
+      },
+      {
+        "name": "Rating",
+        "developer_name": "Rating",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "OTHER_MIX__c",
+        "developer_name": "OTHER_MIX",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Last_Updated__c",
+        "developer_name": "Last_Updated",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__utm_campaign__c",
+        "developer_name": "utm_campaign",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__first_touch_url__c",
+        "developer_name": "first_touch_url",
+        "description": "The value of the referrer for the first tracked request made by a Prospect.",
+        "data_type": "Long Text Area(65000)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Status",
+        "developer_name": "Status",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "ACRYLIC__c",
+        "developer_name": "ACRYLIC",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Support_User_1__c",
+        "developer_name": "Support_User_1",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Address",
+        "developer_name": "Address",
+        "description": "",
+        "data_type": "Address",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LDPE__c",
+        "developer_name": "LDPE",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "ConvertedDate",
+        "developer_name": "ConvertedDate",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "PE__c",
+        "developer_name": "PE",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "NON_FERROUS_METAL__c",
+        "developer_name": "NON_FERROUS_METAL",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "NumberOfEmployees",
+        "developer_name": "NumberOfEmployees",
+        "description": "",
+        "data_type": "Number(8, 0)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__first_activity__c",
+        "developer_name": "first_activity",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Company_Registration_Number__c",
+        "developer_name": "Company_Registration_Number",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Phone_Opt_In__c",
+        "developer_name": "Phone_Opt_In",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Net_Worth__c",
+        "developer_name": "Net_Worth",
+        "description": "",
+        "data_type": "Number(16, 2)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "ConvertedOpportunityId",
+        "developer_name": "ConvertedOpportunity",
+        "description": "",
+        "data_type": "Lookup(Opportunity)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Complete_Account__c",
+        "developer_name": "Complete_Account",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Inactive__c",
+        "developer_name": "Inactive",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__utm_term__c",
+        "developer_name": "utm_term",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "FIBRE_MEDIUM_GRADES__c",
+        "developer_name": "FIBRE_MEDIUM_GRADES",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Title",
+        "developer_name": "Title",
+        "description": "",
+        "data_type": "Text(128)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "WasteTrade_Type__c",
+        "developer_name": "WasteTrade_Type",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CS_APP__Credit_Limit__c",
+        "developer_name": "Credit_Limit",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Id",
+        "developer_name": "Id",
+        "description": "",
+        "data_type": "Lookup()",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Lead_Buyer_Intention__c",
+        "developer_name": "Lead_Buyer_Intention",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "SystemModstamp",
+        "developer_name": "SystemModstamp",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__campaign__c",
+        "developer_name": "campaign",
+        "description": "The Account Engagement Campaign represents the first marketing touch with a prospect. It may be a campaign associated with your web site, landing page, paid search initiative, or any other marketing effort. Prospects may only be associated with one Account Engagement campaign. This value can later be changed manually or via an Automation Rule.",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "IsDeleted",
+        "developer_name": "IsDeleted",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Lead_Rating__c",
+        "developer_name": "Lead_Rating",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "pi__conversion_object_name__c",
+        "developer_name": "conversion_object_name",
+        "description": "This is the name of the object (form, form handler, landing page, or video form) that converted an anonymous visitor into a named prospect.",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Description",
+        "developer_name": "Description",
+        "description": "",
+        "data_type": "Long Text Area(32000)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "ABS__c",
+        "developer_name": "ABS",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CreatedById",
+        "developer_name": "CreatedBy",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Support_User_2__c",
+        "developer_name": "Support_User_2",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Wastetrade_Lead_Source__c",
+        "developer_name": "Wastetrade_Lead_Source",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Name",
+        "developer_name": "Name",
+        "description": "",
+        "data_type": "Name",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Enquiry_Message__c",
+        "developer_name": "Enquiry_Message",
+        "description": "",
+        "data_type": "Long Text Area(32768)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      }
+    ],
+    "description": "Salesforce Lead object",
+    "total_fields": 137,
+    "csv_file": "Lead.csv"
+  },
+  "MFI Tests": {
+    "fields": [
+      {
+        "name": "LastModifiedById",
+        "developer_name": "LastModifiedBy",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "WP_Slug__c",
+        "developer_name": "WP_Slug",
+        "description": "From WP post_name",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CreatedDate",
+        "developer_name": "CreatedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastActivityDate",
+        "developer_name": "LastActivityDate",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "UserRecordAccessId",
+        "developer_name": "UserRecordAccess",
+        "description": "",
+        "data_type": "Lookup(User Record Access)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "CurrencyIsoCode",
+        "developer_name": "CurrencyIsoCode",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "WP_Published_Datetime__c",
+        "developer_name": "WP_Published_Datetime",
+        "description": "From WP post_date_gmt",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Name",
+        "developer_name": "Name",
+        "description": "",
+        "data_type": "Text(80)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastModifiedDate",
+        "developer_name": "LastModifiedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "WP_Post_ID__c",
+        "developer_name": "WP_Post_ID",
+        "description": "Internal WordPress post ID",
+        "data_type": "Number(18, 0)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastViewedDate",
+        "developer_name": "LastViewedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "IsDeleted",
+        "developer_name": "IsDeleted",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "SystemModstamp",
+        "developer_name": "SystemModstamp",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "WP_Permalink__c",
+        "developer_name": "WP_Permalink",
+        "description": "Compute from site URL + /mfi-test/ + slug",
+        "data_type": "URL(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "OwnerId",
+        "developer_name": "Owner",
+        "description": "",
+        "data_type": "Lookup(User,Group)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "WP_Modified_Datetime__c",
+        "developer_name": "WP_Modified_Datetime",
+        "description": "From WP post_modified_gmt",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "WP_Status__c",
+        "developer_name": "WP_Status",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CreatedById",
+        "developer_name": "CreatedBy",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "WP_Meta_JSON__c",
+        "developer_name": "WP_Meta_JSON",
+        "description": "All WP custom fields / ACF meta serialized to JSON",
+        "data_type": "Long Text Area(32768)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastReferencedDate",
+        "developer_name": "LastReferencedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Id",
+        "developer_name": "Id",
+        "description": "",
+        "data_type": "Lookup()",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "WP_Author_ID__c",
+        "developer_name": "WP_Author_ID",
+        "description": "From WP post_author (supports 'author')",
+        "data_type": "Number(18, 0)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      }
+    ],
+    "description": "Salesforce MFI Tests object",
+    "total_fields": 22,
+    "csv_file": "MFI Tests.csv"
+  },
+  "Offers": {
+    "fields": [
+      {
+        "name": "Id",
+        "developer_name": "Id",
+        "description": "",
+        "data_type": "Lookup()",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "OwnerId",
+        "developer_name": "Owner",
+        "description": "",
+        "data_type": "Lookup(User,Group)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "IsDeleted",
+        "developer_name": "IsDeleted",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Name",
+        "developer_name": "Name",
+        "description": "",
+        "data_type": "Text(80)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CurrencyIsoCode",
+        "developer_name": "CurrencyIsoCode",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CreatedDate",
+        "developer_name": "CreatedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CreatedById",
+        "developer_name": "CreatedBy",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "LastModifiedDate",
+        "developer_name": "LastModifiedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastModifiedById",
+        "developer_name": "LastModifiedBy",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "SystemModstamp",
+        "developer_name": "SystemModstamp",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastViewedDate",
+        "developer_name": "LastViewedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastReferencedDate",
+        "developer_name": "LastReferencedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "UserRecordAccessId",
+        "developer_name": "UserRecordAccess",
+        "description": "",
+        "data_type": "Lookup(User Record Access)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Accepted_At__c",
+        "developer_name": "Accepted_At",
+        "description": "Date and time when offer was accepted",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Accepted_By_User_Id__c",
+        "developer_name": "Accepted_By_User_Id",
+        "description": "ID of the user who accepted the offer",
+        "data_type": "Text(50)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Buyer_Company_Id__c",
+        "developer_name": "Buyer_Company_Id",
+        "description": "ID of the buyer company",
+        "data_type": "Text(50)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Buyer_Company__c",
+        "developer_name": "Buyer_Company",
+        "description": "Name of the buyer company",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Buyer_Country__c",
+        "developer_name": "Buyer_Country",
+        "description": "Country of the buyer",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Buyer_Full_Name__c",
+        "developer_name": "Buyer_Full_Name",
+        "description": "Full name of the buyer",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Buyer_Location_Id__c",
+        "developer_name": "Buyer_Location_Id",
+        "description": "ID of the buyer location",
+        "data_type": "Text(50)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Buyer_Location__c",
+        "developer_name": "Buyer_Location",
+        "description": "Name of the buyer location/warehouse",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Buyer_User_Id__c",
+        "developer_name": "Buyer_User_Id",
+        "description": "ID of the buyer user",
+        "data_type": "Text(50)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Created_Date__c",
+        "developer_name": "Created_Date",
+        "description": "Date and time when offer was created",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Currency__c",
+        "developer_name": "Currency",
+        "description": "Currency code for the offer",
+        "data_type": "Text(10)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Delivery_Location_Address__c",
+        "developer_name": "Delivery_Location_Address",
+        "description": "Full address of the delivery location (buyer's warehouse/facility)",
+        "data_type": "Text Area(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Earliest_Delivery_Date__c",
+        "developer_name": "Earliest_Delivery_Date",
+        "description": "Earliest possible delivery date",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Expires_At__c",
+        "developer_name": "Expires_At",
+        "description": "Date and time when offer expires",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Incoterms__c",
+        "developer_name": "Incoterms",
+        "description": "International commercial terms",
+        "data_type": "Text(50)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Latest_Delivery_Date__c",
+        "developer_name": "Latest_Delivery_Date",
+        "description": "Latest possible delivery date",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Material_Name__c",
+        "developer_name": "Material_Name",
+        "description": "Full material name including type, item, form, grading, color, finishing",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Material_Packing__c",
+        "developer_name": "Material_Packing",
+        "description": "How the material is packaged",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Material_Type__c",
+        "developer_name": "Material_Type",
+        "description": "Type of material",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Material_Weight__c",
+        "developer_name": "Material_Weight",
+        "description": "Weight of the material",
+        "data_type": "Number(16, 2)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Message__c",
+        "developer_name": "Message",
+        "description": "Message accompanying the offer",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Needs_Transport__c",
+        "developer_name": "Needs_Transport",
+        "description": "Whether transport is needed",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Offer_State__c",
+        "developer_name": "Offer_State",
+        "description": "Current state of the offer",
+        "data_type": "Text(50)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Offer_Status__c",
+        "developer_name": "Offer_Status",
+        "description": "Current status of the offer",
+        "data_type": "Text(50)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Offered_Price_Per_Unit__c",
+        "developer_name": "Offered_Price_Per_Unit",
+        "description": "Price offered per unit",
+        "data_type": "Currency(16, 2)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Pickup_Location_Address__c",
+        "developer_name": "Pickup_Location_Address",
+        "description": "Full address of the pickup location (seller's warehouse/facility)",
+        "data_type": "Text Area(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Quantity__c",
+        "developer_name": "Quantity",
+        "description": "Quantity of the offer",
+        "data_type": "Number(16, 2)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Rejected_By_User_Id__c",
+        "developer_name": "Rejected_By_User_Id",
+        "description": "ID of the user who rejected the offer",
+        "data_type": "Text(50)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Rejection_Reason__c",
+        "developer_name": "Rejection_Reason",
+        "description": "Reason for offer rejection",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Rejection_Source__c",
+        "developer_name": "Rejection_Source",
+        "description": "Source of the rejection",
+        "data_type": "Text(50)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Related_Listing__c",
+        "developer_name": "Related_Listing",
+        "description": "ID of the related listing",
+        "data_type": "Text(50)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Seller_Company_Id__c",
+        "developer_name": "Seller_Company_Id",
+        "description": "ID of the seller company",
+        "data_type": "Text(50)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Seller_Company__c",
+        "developer_name": "Seller_Company",
+        "description": "Name of the seller company",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Seller_Country__c",
+        "developer_name": "Seller_Country",
+        "description": "Country of the seller",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Seller_Full_Name__c",
+        "developer_name": "Seller_Full_Name",
+        "description": "Full name of the seller",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Seller_Location_Id__c",
+        "developer_name": "Seller_Location_Id",
+        "description": "ID of the seller location",
+        "data_type": "Text(50)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Seller_Location__c",
+        "developer_name": "Seller_Location",
+        "description": "Name of the seller location/warehouse",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Seller_User_Id__c",
+        "developer_name": "Seller_User_Id",
+        "description": "ID of the seller user",
+        "data_type": "Text(50)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Shipping_Port__c",
+        "developer_name": "Shipping_Port",
+        "description": "Port for shipping",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Total_Price__c",
+        "developer_name": "Total_Price",
+        "description": "Total price of the offer",
+        "data_type": "Currency(16, 2)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "WasteTrade_Offer_Id__c",
+        "developer_name": "WasteTrade_Offer_Id",
+        "description": "Unique identifier from WasteTrade system",
+        "data_type": "Text(50)  (External ID) (Unique Case Insensitive)",
+        "required": false,
+        "is_external_id": true,
+        "is_lookup": false
+      },
+      {
+        "name": "admin_bid_status__c",
+        "developer_name": "admin_bid_status",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "bid_accepted__c",
+        "developer_name": "bid_accepted",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "bid_currency__c",
+        "developer_name": "bid_currency",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "bid_custom_value__c",
+        "developer_name": "bid_custom_value",
+        "description": "",
+        "data_type": "Number(18, 0)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "bid_final_value__c",
+        "developer_name": "bid_final_value",
+        "description": "",
+        "data_type": "Number(18, 0)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "bid_status__c",
+        "developer_name": "bid_status",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "bid_value__c",
+        "developer_name": "bid_value",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "bidder_distance__c",
+        "developer_name": "bidder_distance",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "bidder_id__c",
+        "developer_name": "bidder_id",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "bidder_profile__c",
+        "developer_name": "bidder_profile",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "bidder_username__c",
+        "developer_name": "bidder_username",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "bidder_warehouse_location__c",
+        "developer_name": "bidder_warehouse_location",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "buyer_earliest_delivery_date__c",
+        "developer_name": "buyer_earliest_delivery_date",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "buyer_latest_delivery_date__c",
+        "developer_name": "buyer_latest_delivery_date",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "buyer_loads_remaining__c",
+        "developer_name": "buyer_loads_remaining",
+        "description": "",
+        "data_type": "Number(18, 0)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "buyer_warehouse_id__c",
+        "developer_name": "buyer_warehouse_id",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "delivery_status__c",
+        "developer_name": "delivery_status",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "listing__c",
+        "developer_name": "listing",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "listing_link__c",
+        "developer_name": "listing_link",
+        "description": "",
+        "data_type": "URL(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "listing_sold__c",
+        "developer_name": "listing_sold",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "listing_user_id__c",
+        "developer_name": "listing_user_id",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "listing_username__c",
+        "developer_name": "listing_username",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "number_of_loads_bid_on__c",
+        "developer_name": "number_of_loads_bid_on",
+        "description": "",
+        "data_type": "Number(18, 0)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "offer_valid_date__c",
+        "developer_name": "offer_valid_date",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "po_details__c",
+        "developer_name": "po_details",
+        "description": "",
+        "data_type": "Text Area(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "po_pdf__c",
+        "developer_name": "po_pdf",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "post_notes__c",
+        "developer_name": "post_notes",
+        "description": "",
+        "data_type": "Text Area(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "sales_listing__c",
+        "developer_name": "sales_listing",
+        "description": "",
+        "data_type": "Lookup(Sales Listing)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "warehouse_address__c",
+        "developer_name": "warehouse_address",
+        "description": "",
+        "data_type": "Text Area(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "wt_offer_admin__c",
+        "developer_name": "wt_offer_admin",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Buyer__c",
+        "developer_name": "Buyer",
+        "description": "",
+        "data_type": "Lookup(Contact)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Seller__c",
+        "developer_name": "Seller",
+        "description": "",
+        "data_type": "Lookup(Contact)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      }
+    ],
+    "description": "Salesforce Offers object",
+    "total_fields": 86,
+    "csv_file": "Offers.csv"
+  },
+  "Sales Listing": {
+    "fields": [
+      {
+        "name": "Id",
+        "developer_name": "Id",
+        "description": "",
+        "data_type": "Lookup()",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "OwnerId",
+        "developer_name": "Owner",
+        "description": "",
+        "data_type": "Lookup(User,Group)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "IsDeleted",
+        "developer_name": "IsDeleted",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Name",
+        "developer_name": "Name",
+        "description": "",
+        "data_type": "Text(80)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CurrencyIsoCode",
+        "developer_name": "CurrencyIsoCode",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CreatedDate",
+        "developer_name": "CreatedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CreatedById",
+        "developer_name": "CreatedBy",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "LastModifiedDate",
+        "developer_name": "LastModifiedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastModifiedById",
+        "developer_name": "LastModifiedBy",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "SystemModstamp",
+        "developer_name": "SystemModstamp",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastActivityDate",
+        "developer_name": "LastActivityDate",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastViewedDate",
+        "developer_name": "LastViewedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastReferencedDate",
+        "developer_name": "LastReferencedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "UserRecordAccessId",
+        "developer_name": "UserRecordAccess",
+        "description": "",
+        "data_type": "Lookup(User Record Access)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "WasteTrade_Listing_Id__c",
+        "developer_name": "WasteTrade_Listing_Id",
+        "description": "",
+        "data_type": "Text(255)  (External ID)",
+        "required": false,
+        "is_external_id": true,
+        "is_lookup": false
+      },
+      {
+        "name": "Description__c",
+        "developer_name": "Description",
+        "description": "",
+        "data_type": "Long Text Area(32000)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "WasteTrade_Publication_Status__c",
+        "developer_name": "WasteTrade_Publication_Status",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "WasteTrade_User_Id__c",
+        "developer_name": "WasteTrade_User_Id",
+        "description": "",
+        "data_type": "Text(255)  (External ID)",
+        "required": false,
+        "is_external_id": true,
+        "is_lookup": false
+      },
+      {
+        "name": "Material__c",
+        "developer_name": "Material",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Material_Origin_Country_Restricted__c",
+        "developer_name": "Material_Origin_Country_Restricted",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Packaging_Type__c",
+        "developer_name": "Packaging_Type",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Storage_Type__c",
+        "developer_name": "Storage_Type",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Material_Weight__c",
+        "developer_name": "Material_Weight",
+        "description": "",
+        "data_type": "Number(16, 2)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Number_of_Loads__c",
+        "developer_name": "Number_of_Loads",
+        "description": "",
+        "data_type": "Number(16, 2)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Indicated_Price__c",
+        "developer_name": "Indicated_Price",
+        "description": "",
+        "data_type": "Currency(16, 2)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "WasteTrade_Site_Id__c",
+        "developer_name": "WasteTrade_Site_Id",
+        "description": "",
+        "data_type": "Text(255)  (External ID)",
+        "required": false,
+        "is_external_id": true,
+        "is_lookup": false
+      },
+      {
+        "name": "Available_From_Date__c",
+        "developer_name": "Available_From_Date",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Sales_Listing_Link__c",
+        "developer_name": "Sales_Listing_Link",
+        "description": "",
+        "data_type": "URL(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Sales_Listing_Featured_Image_Link__c",
+        "developer_name": "Sales_Listing_Featured_Image_Link",
+        "description": "",
+        "data_type": "URL(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Group__c",
+        "developer_name": "Group",
+        "description": "",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Material_Type__c",
+        "developer_name": "Material_Type",
+        "description": "",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Email_Notification_Campaign__c",
+        "developer_name": "Email_Notification_Campaign",
+        "description": "",
+        "data_type": "Lookup(Campaign)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Generate_Engagement_Campaign__c",
+        "developer_name": "Generate_Engagement_Campaign",
+        "description": "Generates a Salesforce campaign and campaign members that are interested in the product.",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Sales_Listing_Featured_Image_Link_2__c",
+        "developer_name": "Sales_Listing_Featured_Image_Link_2",
+        "description": "",
+        "data_type": "URL(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Sales_Listing_Featured_Image_Link_3__c",
+        "developer_name": "Sales_Listing_Featured_Image_Link_3",
+        "description": "",
+        "data_type": "URL(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Send_Engagement_Email_Timestamp__c",
+        "developer_name": "Send_Engagement_Email_Timestamp",
+        "description": "Datetime at which Send Engagement Email checkbox was ticked.",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Send_Engagement_Email__c",
+        "developer_name": "Send_Engagement_Email",
+        "description": "Send engagement email to associated campaign via Pardot.",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Linked_to_Account_Engagement__c",
+        "developer_name": "Linked_to_Account_Engagement",
+        "description": "",
+        "data_type": "Formula (Checkbox)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Send_to_Account_Engagement__c",
+        "developer_name": "Send_to_Account_Engagement",
+        "description": "Include listing in automation to fetch Pardot campaign ID",
+        "data_type": "Formula (Checkbox)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Listing_Sold__c",
+        "developer_name": "Listing_Sold",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Material_Location__c",
+        "developer_name": "Material_Location",
+        "description": "",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Country_of_Origin__c",
+        "developer_name": "Country_of_Origin",
+        "description": "",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Listing_Status__c",
+        "developer_name": "Listing_Status",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Contact__c",
+        "developer_name": "Contact",
+        "description": "",
+        "data_type": "Lookup(Contact)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      }
+    ],
+    "description": "Salesforce Sales Listing object",
+    "total_fields": 44,
+    "csv_file": "Sales Listing.csv"
+  },
+  "Sample Requests": {
+    "fields": [
+      {
+        "name": "Id",
+        "developer_name": "Id",
+        "description": "",
+        "data_type": "Lookup()",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "OwnerId",
+        "developer_name": "Owner",
+        "description": "",
+        "data_type": "Lookup(User,Group)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "IsDeleted",
+        "developer_name": "IsDeleted",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Name",
+        "developer_name": "Name",
+        "description": "",
+        "data_type": "Text(80)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CurrencyIsoCode",
+        "developer_name": "CurrencyIsoCode",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CreatedDate",
+        "developer_name": "CreatedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CreatedById",
+        "developer_name": "CreatedBy",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "LastModifiedDate",
+        "developer_name": "LastModifiedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastModifiedById",
+        "developer_name": "LastModifiedBy",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "SystemModstamp",
+        "developer_name": "SystemModstamp",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastActivityDate",
+        "developer_name": "LastActivityDate",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastViewedDate",
+        "developer_name": "LastViewedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastReferencedDate",
+        "developer_name": "LastReferencedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "UserRecordAccessId",
+        "developer_name": "UserRecordAccess",
+        "description": "",
+        "data_type": "Lookup(User Record Access)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "WP_Author_ID__c",
+        "developer_name": "WP_Author_ID",
+        "description": "From WP post_author (supports 'author')",
+        "data_type": "Number(18, 0)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "WP_Meta_JSON__c",
+        "developer_name": "WP_Meta_JSON",
+        "description": "All WP custom fields / ACF meta serialized to JSON",
+        "data_type": "Long Text Area(32768)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "WP_Modified_Datetime__c",
+        "developer_name": "WP_Modified_Datetime",
+        "description": "From WP post_modified_gmt",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "WP_Permalink__c",
+        "developer_name": "WP_Permalink",
+        "description": "Compute from site URL + /sample/ + slug",
+        "data_type": "URL(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "WP_Post_ID__c",
+        "developer_name": "WP_Post_ID",
+        "description": "Internal WordPress post ID",
+        "data_type": "Number(18, 0)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "WP_Published_Datetime__c",
+        "developer_name": "WP_Published_Datetime",
+        "description": "From WP post_date_gmt",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "WP_Slug__c",
+        "developer_name": "WP_Slug",
+        "description": "From WP post_name",
+        "data_type": "Text(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "WP_Status__c",
+        "developer_name": "WP_Status",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      }
+    ],
+    "description": "Salesforce Sample Requests object",
+    "total_fields": 22,
+    "csv_file": "Sample Requests.csv"
+  },
+  "Wanted Listings": {
+    "fields": [
+      {
+        "name": "Id",
+        "developer_name": "Id",
+        "description": "",
+        "data_type": "Lookup()",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "OwnerId",
+        "developer_name": "Owner",
+        "description": "",
+        "data_type": "Lookup(User,Group)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "IsDeleted",
+        "developer_name": "IsDeleted",
+        "description": "",
+        "data_type": "Checkbox",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Name",
+        "developer_name": "Name",
+        "description": "",
+        "data_type": "Text(80)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CurrencyIsoCode",
+        "developer_name": "CurrencyIsoCode",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CreatedDate",
+        "developer_name": "CreatedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "CreatedById",
+        "developer_name": "CreatedBy",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "LastModifiedDate",
+        "developer_name": "LastModifiedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastModifiedById",
+        "developer_name": "LastModifiedBy",
+        "description": "",
+        "data_type": "Lookup(User)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "SystemModstamp",
+        "developer_name": "SystemModstamp",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastActivityDate",
+        "developer_name": "LastActivityDate",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastViewedDate",
+        "developer_name": "LastViewedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "LastReferencedDate",
+        "developer_name": "LastReferencedDate",
+        "description": "",
+        "data_type": "Date/Time",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "UserRecordAccessId",
+        "developer_name": "UserRecordAccess",
+        "description": "",
+        "data_type": "Lookup(User Record Access)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Location_of_Waste__c",
+        "developer_name": "Location_of_Waste",
+        "description": "",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Material_Type__c",
+        "developer_name": "Material_Type",
+        "description": "",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Material_Group__c",
+        "developer_name": "Material_Group",
+        "description": "",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Material__c",
+        "developer_name": "Material",
+        "description": "",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "How_its_packaged__c",
+        "developer_name": "How_its_packaged",
+        "description": "",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "MFI_Range__c",
+        "developer_name": "MFI_Range",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "How_its_Stored__c",
+        "developer_name": "How_its_Stored",
+        "description": "",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Quantity__c",
+        "developer_name": "Quantity",
+        "description": "",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Quantity_Metric__c",
+        "developer_name": "Quantity_Metric",
+        "description": "",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Frequency__c",
+        "developer_name": "Frequency",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Guide_Price__c",
+        "developer_name": "Guide_Price",
+        "description": "",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Guide_Price_Currency__c",
+        "developer_name": "Guide_Price_Currency",
+        "description": "",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Comments__c",
+        "developer_name": "Comments",
+        "description": "",
+        "data_type": "Text Area(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Contact__c",
+        "developer_name": "Contact",
+        "description": "",
+        "data_type": "Lookup(Contact)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": true
+      },
+      {
+        "name": "Available_From__c",
+        "developer_name": "Available_From",
+        "description": "",
+        "data_type": "Date",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Listing_Status__c",
+        "developer_name": "Listing_Status",
+        "description": "",
+        "data_type": "Picklist",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Listing_Rejection_Reason__c",
+        "developer_name": "Listing_Rejection_Reason",
+        "description": "",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Admin_Wanted__c",
+        "developer_name": "Admin_Wanted",
+        "description": "",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Post_Notes__c",
+        "developer_name": "Post_Notes",
+        "description": "",
+        "data_type": "Text Area(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "WT_Listing_ID__c",
+        "developer_name": "WT_Listing_ID",
+        "description": "",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Listing_Link__c",
+        "developer_name": "Listing_Link",
+        "description": "",
+        "data_type": "URL(255)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "End_Date__c",
+        "developer_name": "End_Date",
+        "description": "",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Wt_Author_ID__c",
+        "developer_name": "Wt_Author_ID",
+        "description": "",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Company_Name__c",
+        "developer_name": "Company_Name",
+        "description": "",
+        "data_type": "Text(100)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      },
+      {
+        "name": "Admin_User_Link__c",
+        "developer_name": "Admin_User_Link",
+        "description": "",
+        "data_type": "Formula (Text)",
+        "required": false,
+        "is_external_id": false,
+        "is_lookup": false
+      }
+    ],
+    "description": "Salesforce Wanted Listings object",
+    "total_fields": 39,
+    "csv_file": "Wanted Listings.csv"
+  }
+}

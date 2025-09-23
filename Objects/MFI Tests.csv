@@ -1,0 +1,23 @@
+﻿QualifiedApiName,DeveloperName,Description,DataType
+LastModifiedById,LastModifiedBy,,Lookup(User)
+WP_Slug__c,WP_Slug,From WP post_name,Text(255)
+CreatedDate,CreatedDate,,Date/Time
+LastActivityDate,LastActivityDate,,Date
+UserRecordAccessId,UserRecordAccess,,Lookup(User Record Access)
+CurrencyIsoCode,CurrencyIsoCode,,Picklist
+WP_Published_Datetime__c,WP_Published_Datetime,From WP post_date_gmt,Date/Time
+Name,Name,,Text(80)
+LastModifiedDate,LastModifiedDate,,Date/Time
+WP_Post_ID__c,WP_Post_ID,Internal WordPress post ID,"Number(18, 0)"
+LastViewedDate,LastViewedDate,,Date/Time
+IsDeleted,IsDeleted,,Checkbox
+SystemModstamp,SystemModstamp,,Date/Time
+WP_Permalink__c,WP_Permalink,Compute from site URL + /mfi-test/ + slug,URL(255)
+OwnerId,Owner,,"Lookup(User,Group)"
+WP_Modified_Datetime__c,WP_Modified_Datetime,From WP post_modified_gmt,Date/Time
+WP_Status__c,WP_Status,,Picklist
+CreatedById,CreatedBy,,Lookup(User)
+WP_Meta_JSON__c,WP_Meta_JSON,All WP custom fields / ACF meta serialized to JSON,Long Text Area(32768)
+LastReferencedDate,LastReferencedDate,,Date/Time
+Id,Id,,Lookup()
+WP_Author_ID__c,WP_Author_ID,From WP post_author (supports 'author'),"Number(18, 0)"

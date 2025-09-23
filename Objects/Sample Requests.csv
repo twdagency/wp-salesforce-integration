@@ -1,0 +1,23 @@
+﻿QualifiedApiName,DeveloperName,Description,DataType
+Id,Id,,Lookup()
+OwnerId,Owner,,"Lookup(User,Group)"
+IsDeleted,IsDeleted,,Checkbox
+Name,Name,,Text(80)
+CurrencyIsoCode,CurrencyIsoCode,,Picklist
+CreatedDate,CreatedDate,,Date/Time
+CreatedById,CreatedBy,,Lookup(User)
+LastModifiedDate,LastModifiedDate,,Date/Time
+LastModifiedById,LastModifiedBy,,Lookup(User)
+SystemModstamp,SystemModstamp,,Date/Time
+LastActivityDate,LastActivityDate,,Date
+LastViewedDate,LastViewedDate,,Date/Time
+LastReferencedDate,LastReferencedDate,,Date/Time
+UserRecordAccessId,UserRecordAccess,,Lookup(User Record Access)
+WP_Author_ID__c,WP_Author_ID,From WP post_author (supports 'author'),"Number(18, 0)"
+WP_Meta_JSON__c,WP_Meta_JSON,All WP custom fields / ACF meta serialized to JSON,Long Text Area(32768)
+WP_Modified_Datetime__c,WP_Modified_Datetime,From WP post_modified_gmt,Date/Time
+WP_Permalink__c,WP_Permalink,Compute from site URL + /sample/ + slug,URL(255)
+WP_Post_ID__c,WP_Post_ID,Internal WordPress post ID,"Number(18, 0)"
+WP_Published_Datetime__c,WP_Published_Datetime,From WP post_date_gmt,Date/Time
+WP_Slug__c,WP_Slug,From WP post_name,Text(255)
+WP_Status__c,WP_Status,,Picklist

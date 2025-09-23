@@ -1,0 +1,45 @@
+﻿QualifiedApiName,DeveloperName,Description,DataType
+Id,Id,,Lookup()
+OwnerId,Owner,,"Lookup(User,Group)"
+IsDeleted,IsDeleted,,Checkbox
+Name,Name,,Text(80)
+CurrencyIsoCode,CurrencyIsoCode,,Picklist
+CreatedDate,CreatedDate,,Date/Time
+CreatedById,CreatedBy,,Lookup(User)
+LastModifiedDate,LastModifiedDate,,Date/Time
+LastModifiedById,LastModifiedBy,,Lookup(User)
+SystemModstamp,SystemModstamp,,Date/Time
+LastActivityDate,LastActivityDate,,Date
+LastViewedDate,LastViewedDate,,Date/Time
+LastReferencedDate,LastReferencedDate,,Date/Time
+UserRecordAccessId,UserRecordAccess,,Lookup(User Record Access)
+WasteTrade_Listing_Id__c,WasteTrade_Listing_Id,,Text(255)  (External ID)
+Description__c,Description,,Long Text Area(32000)
+WasteTrade_Publication_Status__c,WasteTrade_Publication_Status,,Picklist
+WasteTrade_User_Id__c,WasteTrade_User_Id,,Text(255)  (External ID)
+Material__c,Material,,Picklist
+Material_Origin_Country_Restricted__c,Material_Origin_Country_Restricted,,Checkbox
+Packaging_Type__c,Packaging_Type,,Picklist
+Storage_Type__c,Storage_Type,,Picklist
+Material_Weight__c,Material_Weight,,"Number(16, 2)"
+Number_of_Loads__c,Number_of_Loads,,"Number(16, 2)"
+Indicated_Price__c,Indicated_Price,,"Currency(16, 2)"
+WasteTrade_Site_Id__c,WasteTrade_Site_Id,,Text(255)  (External ID)
+Available_From_Date__c,Available_From_Date,,Date
+Sales_Listing_Link__c,Sales_Listing_Link,,URL(255)
+Sales_Listing_Featured_Image_Link__c,Sales_Listing_Featured_Image_Link,,URL(255)
+Group__c,Group,,Text(100)
+Material_Type__c,Material_Type,,Text(100)
+Email_Notification_Campaign__c,Email_Notification_Campaign,,Lookup(Campaign)
+Generate_Engagement_Campaign__c,Generate_Engagement_Campaign,Generates a Salesforce campaign and campaign members that are interested in the product.,Checkbox
+Sales_Listing_Featured_Image_Link_2__c,Sales_Listing_Featured_Image_Link_2,,URL(255)
+Sales_Listing_Featured_Image_Link_3__c,Sales_Listing_Featured_Image_Link_3,,URL(255)
+Send_Engagement_Email_Timestamp__c,Send_Engagement_Email_Timestamp,Datetime at which Send Engagement Email checkbox was ticked.,Date/Time
+Send_Engagement_Email__c,Send_Engagement_Email,Send engagement email to associated campaign via Pardot.,Checkbox
+Linked_to_Account_Engagement__c,Linked_to_Account_Engagement,,Formula (Checkbox)
+Send_to_Account_Engagement__c,Send_to_Account_Engagement,Include listing in automation to fetch Pardot campaign ID,Formula (Checkbox)
+Listing_Sold__c,Listing_Sold,,Checkbox
+Material_Location__c,Material_Location,,Text(255)
+Country_of_Origin__c,Country_of_Origin,,Text(100)
+Listing_Status__c,Listing_Status,,Picklist
+Contact__c,Contact,,Lookup(Contact)

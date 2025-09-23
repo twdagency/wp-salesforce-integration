@@ -1,0 +1,568 @@
+{
+  "Account": {
+    "Name": {
+      "wp_field": "post_title",
+      "wp_source": "post",
+      "required": true,
+      "transformation": "text",
+      "description": "Object name/title"
+    },
+    "Company_VAT_Number__c": {
+      "wp_field": "company_vat_number",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "description": "Company VAT Number"
+    },
+    "WasteTrade_Type__c": {
+      "wp_field": "waste_trade_type",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "description": "Waste Trade Type"
+    },
+    "EORI_Number__c": {
+      "wp_field": "eori_number",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "description": "EORI Number"
+    },
+    "Primary_Licence_Type__c": {
+      "wp_field": "primary_licence_type",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "description": "Primary Licence Type"
+    },
+    "CS_APP__Company_Status__c": {
+      "wp_field": "company_status",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "description": "Company Status"
+    },
+    "Registered_Waste_Exemption_Number__c": {
+      "wp_field": "waste_exemption_number",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "description": "Waste Exemption Number"
+    },
+    "Waste_Carrier_Licence_Start_Date__c": {
+      "wp_field": "carrier_licence_start_date",
+      "wp_source": "user_meta",
+      "transformation": "date",
+      "description": "Carrier Licence Start Date"
+    },
+    "Credit_Limit_Requested__c": {
+      "wp_field": "credit_limit_requested",
+      "wp_source": "user_meta",
+      "transformation": "currency",
+      "description": "Credit Limit Requested"
+    },
+    "Billing_and_Shipping_Address_Identical__c": {
+      "wp_field": "billing_shipping_same",
+      "wp_source": "user_meta",
+      "transformation": "boolean",
+      "description": "Billing and Shipping Address Identical"
+    }
+  },
+  "Contact": {
+    "Name": {
+      "wp_field": "post_title",
+      "wp_source": "post",
+      "required": true,
+      "transformation": "text",
+      "description": "Object name/title"
+    },
+    "FirstName": {
+      "wp_field": "first_name",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "required": true,
+      "description": "First Name"
+    },
+    "LastName": {
+      "wp_field": "last_name",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "required": true,
+      "description": "Last Name"
+    },
+    "Email": {
+      "wp_field": "user_email",
+      "wp_source": "user",
+      "transformation": "email",
+      "required": true,
+      "description": "Email Address"
+    },
+    "Phone": {
+      "wp_field": "phone",
+      "wp_source": "user_meta",
+      "transformation": "phone",
+      "description": "Phone Number"
+    },
+    "Title": {
+      "wp_field": "job_title",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "description": "Job Title"
+    },
+    "AccountId": {
+      "wp_field": "salesforce_account_id",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "required": true,
+      "description": "Account ID"
+    },
+    "Street": {
+      "wp_field": "address_line_1",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "description": "Street Address"
+    },
+    "City": {
+      "wp_field": "city",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "description": "City"
+    },
+    "State": {
+      "wp_field": "state",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "description": "State/Province"
+    },
+    "PostalCode": {
+      "wp_field": "postal_code",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "description": "Postal Code"
+    },
+    "Country": {
+      "wp_field": "country",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "description": "Country"
+    },
+    "Description": {
+      "wp_field": "description",
+      "wp_source": "user_meta",
+      "transformation": "textarea",
+      "description": "Description"
+    },
+    "No_Longer_With_Company__c": {
+      "wp_field": "no_longer_with_company",
+      "wp_source": "user_meta",
+      "transformation": "boolean",
+      "description": "No Longer With Company"
+    },
+    "Site_Role__c": {
+      "wp_field": "site_role",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "description": "Site Role"
+    },
+    "Phone_Opt_In__c": {
+      "wp_field": "phone_opt_in",
+      "wp_source": "user_meta",
+      "transformation": "boolean",
+      "description": "Phone Opt In"
+    }
+  },
+  "Haulage Loads": {
+    "Name": {
+      "wp_field": "post_title",
+      "wp_source": "post",
+      "transformation": "text",
+      "required": true,
+      "description": "Object name/title"
+    }
+  },
+  "Haulage Offers": {
+    "Name": {
+      "wp_field": "post_title",
+      "wp_source": "post",
+      "transformation": "text",
+      "required": true,
+      "description": "Object name/title"
+    }
+  },
+  "Lead": {
+    "Name": {
+      "wp_field": "post_title",
+      "wp_source": "post",
+      "required": true,
+      "transformation": "text",
+      "description": "Object name/title"
+    },
+    "FirstName": {
+      "wp_field": "first_name",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "required": true,
+      "description": "First Name"
+    },
+    "LastName": {
+      "wp_field": "last_name",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "required": true,
+      "description": "Last Name"
+    },
+    "Email": {
+      "wp_field": "user_email",
+      "wp_source": "user",
+      "transformation": "email",
+      "required": true,
+      "description": "Email Address"
+    },
+    "Company": {
+      "wp_field": "company_name",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "description": "Company Name"
+    },
+    "Phone": {
+      "wp_field": "phone",
+      "wp_source": "user_meta",
+      "transformation": "phone",
+      "description": "Phone Number"
+    },
+    "Website": {
+      "wp_field": "website",
+      "wp_source": "user_meta",
+      "transformation": "url",
+      "description": "Website"
+    },
+    "Status": {
+      "wp_field": "lead_status",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "description": "Lead Status"
+    },
+    "LeadSource": {
+      "wp_field": "lead_source",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "description": "Lead Source"
+    },
+    "Title": {
+      "wp_field": "job_title",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "description": "Job Title"
+    },
+    "Industry": {
+      "wp_field": "industry",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "description": "Industry"
+    },
+    "Street": {
+      "wp_field": "address_line_1",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "description": "Street Address"
+    },
+    "City": {
+      "wp_field": "city",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "description": "City"
+    },
+    "State": {
+      "wp_field": "state",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "description": "State/Province"
+    },
+    "PostalCode": {
+      "wp_field": "postal_code",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "description": "Postal Code"
+    },
+    "Country": {
+      "wp_field": "country",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "description": "Country"
+    },
+    "Description": {
+      "wp_field": "description",
+      "wp_source": "user_meta",
+      "transformation": "textarea",
+      "description": "Description"
+    },
+    "Marketing_Source__c": {
+      "wp_field": "marketing_source",
+      "wp_source": "user_meta",
+      "transformation": "text",
+      "description": "Marketing Source"
+    },
+    "Marketing_Opt_In__c": {
+      "wp_field": "marketing_opt_in",
+      "wp_source": "user_meta",
+      "transformation": "boolean",
+      "description": "Marketing Opt In"
+    },
+    "HasOptedOutOfEmail": {
+      "wp_field": "email_opt_out",
+      "wp_source": "user_meta",
+      "transformation": "boolean",
+      "description": "Email Opt Out"
+    }
+  },
+  "MFI Tests": {
+    "Name": {
+      "wp_field": "post_title",
+      "wp_source": "post",
+      "transformation": "text",
+      "required": true,
+      "description": "Object name/title"
+    },
+    "WP_Post_ID__c": {
+      "wp_field": "ID",
+      "wp_source": "post",
+      "transformation": "number",
+      "required": true,
+      "description": "WordPress Post ID"
+    },
+    "WP_Author_ID__c": {
+      "wp_field": "post_author",
+      "wp_source": "post",
+      "transformation": "number",
+      "required": true,
+      "description": "WordPress Author ID"
+    },
+    "WP_Published_Datetime__c": {
+      "wp_field": "post_date",
+      "wp_source": "post",
+      "transformation": "datetime",
+      "description": "WordPress publication date"
+    },
+    "WP_Modified_Datetime__c": {
+      "wp_field": "post_modified",
+      "wp_source": "post",
+      "transformation": "datetime",
+      "description": "WordPress modification date"
+    },
+    "WP_Permalink__c": {
+      "wp_field": "post_permalink",
+      "wp_source": "computed",
+      "transformation": "url",
+      "description": "WordPress permalink"
+    },
+    "WP_Slug__c": {
+      "wp_field": "post_name",
+      "wp_source": "post",
+      "transformation": "text",
+      "description": "WordPress post slug"
+    },
+    "WP_Meta_JSON__c": {
+      "wp_field": "wp_meta_json",
+      "wp_source": "computed",
+      "transformation": "json",
+      "description": "WordPress meta data as JSON"
+    }
+  },
+  "Offers": {
+    "Name": {
+      "wp_field": "post_title",
+      "wp_source": "post",
+      "required": true,
+      "transformation": "text",
+      "description": "Object name/title"
+    },
+    "Accepted_At__c": {
+      "wp_field": "accepted_at",
+      "wp_source": "acf",
+      "transformation": "datetime",
+      "description": "Accepted At"
+    },
+    "Accepted_By_User_Id__c": {
+      "wp_field": "accepted_by_user_id",
+      "wp_source": "acf",
+      "transformation": "text",
+      "description": "Accepted By User ID"
+    },
+    "Buyer_Company_Id__c": {
+      "wp_field": "buyer_company_id",
+      "wp_source": "acf",
+      "transformation": "text",
+      "description": "Buyer Company ID"
+    },
+    "Buyer_Company__c": {
+      "wp_field": "buyer_company",
+      "wp_source": "acf",
+      "transformation": "text",
+      "description": "Buyer Company"
+    },
+    "Buyer_Country__c": {
+      "wp_field": "buyer_country",
+      "wp_source": "acf",
+      "transformation": "text",
+      "description": "Buyer Country"
+    },
+    "Buyer_Full_Name__c": {
+      "wp_field": "buyer_full_name",
+      "wp_source": "acf",
+      "transformation": "text",
+      "description": "Buyer Full Name"
+    },
+    "Offer_Amount__c": {
+      "wp_field": "offer_amount",
+      "wp_source": "acf",
+      "transformation": "currency",
+      "description": "Offer Amount"
+    },
+    "Offer_Status__c": {
+      "wp_field": "offer_status",
+      "wp_source": "acf",
+      "transformation": "text",
+      "description": "Offer Status"
+    },
+    "Created_Date__c": {
+      "wp_field": "created_date",
+      "wp_source": "acf",
+      "transformation": "datetime",
+      "description": "Created Date"
+    }
+  },
+  "Sales Listing": {
+    "Name": {
+      "wp_field": "post_title",
+      "wp_source": "post",
+      "required": true,
+      "transformation": "text",
+      "description": "Object name/title"
+    },
+    "Description__c": {
+      "wp_field": "post_content",
+      "wp_source": "post",
+      "required": false,
+      "transformation": "textarea",
+      "description": "Object description"
+    },
+    "WasteTrade_Listing_Id__c": {
+      "wp_field": "waste_trade_listing_id",
+      "wp_source": "acf",
+      "transformation": "text",
+      "required": true,
+      "description": "Waste Trade Listing ID"
+    },
+    "WasteTrade_User_Id__c": {
+      "wp_field": "waste_trade_user_id",
+      "wp_source": "acf",
+      "transformation": "text",
+      "required": true,
+      "description": "Waste Trade User ID"
+    },
+    "Material__c": {
+      "wp_field": "material",
+      "wp_source": "acf",
+      "transformation": "text",
+      "description": "Material Type"
+    },
+    "WasteTrade_Publication_Status__c": {
+      "wp_field": "publication_status",
+      "wp_source": "acf",
+      "transformation": "text",
+      "description": "Publication Status"
+    },
+    "Quantity__c": {
+      "wp_field": "quantity",
+      "wp_source": "acf",
+      "transformation": "number",
+      "description": "Quantity"
+    },
+    "Price__c": {
+      "wp_field": "price",
+      "wp_source": "acf",
+      "transformation": "currency",
+      "description": "Price"
+    },
+    "Location__c": {
+      "wp_field": "location",
+      "wp_source": "acf",
+      "transformation": "text",
+      "description": "Location"
+    },
+    "Country__c": {
+      "wp_field": "country",
+      "wp_source": "acf",
+      "transformation": "text",
+      "description": "Country"
+    },
+    "Available_From__c": {
+      "wp_field": "available_from",
+      "wp_source": "acf",
+      "transformation": "date",
+      "description": "Available From Date"
+    },
+    "End_Date__c": {
+      "wp_field": "end_date",
+      "wp_source": "acf",
+      "transformation": "date",
+      "description": "End Date"
+    }
+  },
+  "Sample Requests": {
+    "Name": {
+      "wp_field": "post_title",
+      "wp_source": "post",
+      "transformation": "text",
+      "required": true,
+      "description": "Object name/title"
+    },
+    "WP_Post_ID__c": {
+      "wp_field": "ID",
+      "wp_source": "post",
+      "transformation": "number",
+      "required": true,
+      "description": "WordPress Post ID"
+    },
+    "WP_Author_ID__c": {
+      "wp_field": "post_author",
+      "wp_source": "post",
+      "transformation": "number",
+      "required": true,
+      "description": "WordPress Author ID"
+    },
+    "WP_Published_Datetime__c": {
+      "wp_field": "post_date",
+      "wp_source": "post",
+      "transformation": "datetime",
+      "description": "WordPress publication date"
+    },
+    "WP_Modified_Datetime__c": {
+      "wp_field": "post_modified",
+      "wp_source": "post",
+      "transformation": "datetime",
+      "description": "WordPress modification date"
+    },
+    "WP_Permalink__c": {
+      "wp_field": "post_permalink",
+      "wp_source": "computed",
+      "transformation": "url",
+      "description": "WordPress permalink"
+    },
+    "WP_Slug__c": {
+      "wp_field": "post_name",
+      "wp_source": "post",
+      "transformation": "text",
+      "description": "WordPress post slug"
+    },
+    "WP_Meta_JSON__c": {
+      "wp_field": "wp_meta_json",
+      "wp_source": "computed",
+      "transformation": "json",
+      "description": "WordPress meta data as JSON"
+    }
+  },
+  "Wanted Listings": {
+    "Name": {
+      "wp_field": "post_title",
+      "wp_source": "post",
+      "transformation": "text",
+      "required": true,
+      "description": "Object name/title"
+    }
+  }
+}

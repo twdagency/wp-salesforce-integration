@@ -1,0 +1,127 @@
+﻿QualifiedApiName,DeveloperName,Description,DataType
+CS_APP__Never_Match__c,Never_Match,,Checkbox
+Registered_Waste_Exemption_Number__c,Registered_Waste_Exemption_Number,,Text(255)
+Waste_Carrier_Licence_Start_Date__c,Waste_Carrier_Licence_Start_Date,,Date
+Credit_Limit_Requested__c,Credit_Limit_Requested,,"Currency(16, 2)"
+CS_APP__Start_Date__c,Start_Date,,Date
+Account_Form_Main_Contact_Id__c,Account_Form_Main_Contact_Id,,Text(255)
+Account_License_Number__c,Account_License_Number,,Text(255)
+WasteTrade_Type__c,WasteTrade_Type,,Picklist
+EORI_Number__c,EORI_Number,,Text(255)
+CS_APP__Company_Status__c,Company_Status,,Text(255)
+CS_APP__PNumber__c,PNumber,,Text(255)
+Primary_Licence_Type__c,Primary_Licence_Type,,Picklist
+Account_Form_Submitted_Position__c,Account_Form_Submitted_Position,,Text(255)
+Cipher_Text__c,Cipher_Text,,Text(255)
+CS_APP__International_Score__c,International_Score,,Text(255)
+accorto__PaymentTermAR__c,PaymentTermAR,Accorto Billing default,Lookup()
+Billing_and_Shipping_Address_Identical__c,Billing_and_Shipping_Address_Identical,,Checkbox
+accorto__Tax__c,Tax,Customer Invoice (Receivables) Tax,Lookup()
+Company_VAT_Number__c,Company_VAT_Number,,Text(255)
+Subsidiary_Source__c,Subsidiary_Source,,Picklist
+IBAN__c,IBAN,,Text(255)
+Subsidiary_Templates__c,Subsidiary_Templates,,Picklist
+Environmental_Permit_Start_Date__c,Environmental_Permit_Start_Date,,Date
+Facility_Permit_End_Date__c,Facility_Permit_End_Date,,Date
+Supplier_Code__c,Supplier_Code,,Text(255)
+Payment_Terms_Days__c,Payment_Terms_Days,,"Number(4, 0)"
+Registered_Waste_Exemption_End_Date__c,Registered_Waste_Exemption_End_Date,,Date
+Complete_Account__c,Complete_Account,,Picklist
+Bank_Account_Number__c,Bank_Account_Number,,Text(255)
+Disposal_Code__c,Disposal_Code,,Text(255)
+CS_APP__Risk_Score__c,Risk_Score,,Text(255)
+CS_APP__Currency__c,Currency,,Text(255)
+Account_Form_Submitted_By__c,Account_Form_Submitted_By,,Text(255)
+Archived__c,Archived,,Checkbox
+CS_APP__Net_Worth__c,Net_Worth,,"Number(16, 2)"
+Local_Council_Authority__c,Local_Council_Authority,,Text(255)
+Waste_Carrier_Licence_Number__c,Waste_Carrier_Licence_Number,,Text(255)
+Facility_Code__c,Facility_Code,,Text(255)
+Environmental_Permit_Number__c,Environmental_Permit_Number,,Text(255)
+Account_Number__c,Account_Number,,Auto Number
+accorto__TaxLocation__c,TaxLocation,Tax Location of the Account,Lookup()
+Facility_Permit_Start_Date__c,Facility_Permit_Start_Date,,Date
+accorto__PaymentTermAP__c,PaymentTermAP,Accorto Billing default,Lookup()
+Sort_Code__c,Sort_Code,,Text(255)
+Account_Region__c,Account_Region,,Picklist
+Account_License_End_Date__c,Account_License_End_Date,,Date
+CS_APP__Score_Description__c,Score_Description,,Text(255)
+CS_APP__Days_Beyond_Term__c,Days_Beyond_Term,,"Number(18, 0)"
+Countries_Shipped_To__c,Countries_Shipped_To,,Long Text Area(32768)
+CS_APP__Activity_Description__c,Activity_Description,,Text(255)
+Account_Form_Main_Site_Id__c,Account_Form_Main_Site_Id,,Text(255)
+Account_License_Start_Date__c,Account_License_Start_Date,,Date
+Waste_Carrier_Licence_End_Date__c,Waste_Carrier_Licence_End_Date,,Date
+CS_APP__Credit_Limit__c,Credit_Limit,,Text(255)
+Import_Clearance__c,Import_Clearance,,Checkbox
+Account_Form_Main_Contact_Name__c,Account_Form_Main_Contact_Name,,Text(255)
+Address__c,Address,,Formula (Text)
+Environmental_Permit_End_Date__c,Environmental_Permit_End_Date,,Date
+Dual_Trading_Primary_Type__c,Dual_Trading_Primary_Type,,Picklist
+Engagement_Source_URL__c,Engagement_Source_URL,,URL(255)
+Facility_Permit_Number__c,Facility_Permit_Number,,Text(255)
+Container__c,Container,,Checkbox
+Export_Clearance__c,Export_Clearance,,Checkbox
+Account_Form_Submitted__c,Account_Form_Submitted,,Checkbox
+Business_Development_Representative__c,Business_Development_Representative,,Lookup(User)
+accorto__TaxExemptionNo__c,TaxExemptionNo,Tax Exception Number,Text(255)
+Account_Form_Current_Section__c,Account_Form_Current_Section,,"Number(18, 0)"
+CS_APP__Last_Updated__c,Last_Updated,,Date/Time
+accorto__Billing_CC__c,Billing_CC,"Billing email copy list - list of emails, separated by commas - used when sending the invoice",Text(255)
+CS_APP__Report_Country_Code__c,Report_Country_Code,,Text(3)
+CS_APP__Activity_Code__c,Activity_Code,,Text(255)
+Company_Registration_Number__c,Company_Registration_Number,,Text(255)
+Shipping_Type__c,Shipping_Type,,Picklist
+Registered_Company_Name__c,Registered_Company_Name,,Text(255)
+Credit_Limit_Offered__c,Credit_Limit_Offered,,"Currency(16, 2)"
+Sales_Representative__c,Sales_Representative,,Text(255)
+Walking_Floor__c,Walking_Floor,,Checkbox
+Account_Form_Submission_Date__c,Account_Form_Submission_Date,,Date/Time
+Verified__c,Verified,,Checkbox
+CS_APP__Connect_Id__c,Connect_Id,,Text(255)  (External ID)
+Account_Form_URL__c,Account_Form_URL,,Formula (Text)
+CS_APP__Language_Code__c,Language_Code,,Text(3)
+CS_APP__Provider_Description__c,Provider_Description,,Text(255)
+Country__c,Country,,Picklist
+accorto__TaxEntityUseCode__c,TaxEntityUseCode,Tax Entity/Use Code for Tax Integration,Picklist
+accorto__TaxpayerNumber__c,TaxpayerNumber,Taxpayer EIN or SSN,Text(30)
+Bank_Account_Name__c,Bank_Account_Name,,Text(255)
+Registered_Waste_Exemption_Start_Date__c,Registered_Waste_Exemption_Start_Date,,Date
+CS_APP__Last_Cleansed_Date__c,Last_Cleansed_Date,,Date
+CS_APP__Reason_Code__c,Reason_Code,,Text(255)
+Proprietors_Partners_Name__c,Proprietors_Partners_Name,,Text(255)
+Territory_Index__c,Territory_Index,,"Number(3, 0)"
+Curtainsider_Trailer__c,Curtainsider_Trailer,,Checkbox
+Id,Id,,Lookup()
+IsDeleted,IsDeleted,,Checkbox
+MasterRecordId,MasterRecord,,Lookup(Account)
+Name,Name,,Name
+Type,Type,,Picklist
+ParentId,Parent,,Hierarchy
+BillingAddress,BillingAddress,,Address
+ShippingAddress,ShippingAddress,,Address
+Phone,Phone,,Phone
+Website,Website,,URL(255)
+PhotoUrl,PhotoUrl,,URL(255)
+Sic,Sic,,Text(20)
+Industry,Industry,,Picklist
+NumberOfEmployees,NumberOfEmployees,,"Number(8, 0)"
+Description,Description,,Long Text Area(32000)
+CurrencyIsoCode,CurrencyIsoCode,,Picklist
+OwnerId,Owner,,Lookup(User)
+CreatedDate,CreatedDate,,Date/Time
+CreatedById,CreatedBy,,Lookup(User)
+LastModifiedDate,LastModifiedDate,,Date/Time
+LastModifiedById,LastModifiedBy,,Lookup(User)
+SystemModstamp,SystemModstamp,,Date/Time
+LastActivityDate,LastActivityDate,,Date
+LastViewedDate,LastViewedDate,,Date/Time
+LastReferencedDate,LastReferencedDate,,Date/Time
+UserRecordAccessId,UserRecordAccess,,Lookup(User Record Access)
+Jigsaw,Jigsaw,,Text(20)
+JigsawCompanyId,JigsawCompany,,External Lookup
+AccountSource,AccountSource,,Picklist
+SicDesc,SicDesc,,Text(80)
+ActivityMetricId,ActivityMetric,,Lookup(Activity Metric)
+ActivityMetricRollupId,ActivityMetricRollup,,Lookup(Activity Metric Rollup)
+IsPriorityRecord,IsPriorityRecord,,Checkbox

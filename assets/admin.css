@@ -1,0 +1,308 @@
+/* WordPress to Salesforce Integration Admin Styles */
+
+.wsi-admin-tabs {
+    margin-top: 20px;
+}
+
+.wsi-admin-tabs .nav-tab-wrapper {
+    margin-bottom: 0;
+}
+
+.tab-content {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-top: none;
+    padding: 20px;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+/* Connection Settings */
+.form-table th {
+    width: 200px;
+}
+
+/* Post Type Settings */
+.wsi-config-table {
+    width: 100%;
+}
+
+.wsi-config-table td {
+    padding: 5px;
+    border: none;
+}
+
+.wsi-config-table td:first-child {
+    font-weight: bold;
+    width: 150px;
+}
+
+/* Field Mapping */
+.field-mapping-container {
+    max-width: 100%;
+}
+
+.post-type-mapping {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+.post-type-mapping h3 {
+    margin-top: 0;
+    color: #23282d;
+}
+
+.mapping-section {
+    margin-top: 15px;
+}
+
+.field-mapping-list {
+    margin: 15px 0;
+}
+
+.field-mapping-row {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.field-mapping-row:hover {
+    background: #f8f8f8;
+}
+
+.mapping-field {
+    flex: 1;
+    min-width: 200px;
+}
+
+.mapping-field strong {
+    display: block;
+    color: #23282d;
+}
+
+.mapping-field small {
+    color: #666;
+    font-style: italic;
+}
+
+.mapping-controls {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.mapping-controls label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+.mapping-controls input,
+.mapping-controls select {
+    min-width: 150px;
+}
+
+.custom-delimiter {
+    display: none !important;
+}
+
+.custom-delimiter.show {
+    display: flex !important;
+}
+
+.add-mapping {
+    margin-top: 10px;
+}
+
+/* Sortable placeholder */
+.field-mapping-placeholder {
+    height: 60px;
+    background: #f0f0f0;
+    border: 2px dashed #ccc;
+    border-radius: 4px;
+    margin: 5px 0;
+}
+
+/* Sync Logs */
+.sync-logs table {
+    margin-top: 15px;
+}
+
+.status-success {
+    color: #46b450;
+    font-weight: bold;
+}
+
+.status-error {
+    color: #dc3232;
+    font-weight: bold;
+}
+
+.status-pending {
+    color: #ffb900;
+    font-weight: bold;
+}
+
+/* Notices */
+.notice {
+    margin: 15px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .field-mapping-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .mapping-controls {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+    
+    .mapping-controls label {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .mapping-controls input,
+    .mapping-controls select {
+        min-width: auto;
+        width: 100%;
+    }
+}
+
+/* Loading States */
+.button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.loading {
+    position: relative;
+    color: transparent;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    border: 2px solid #ccc;
+    border-top-color: #0073aa;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Help Text */
+.help-text {
+    font-style: italic;
+    color: #666;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* Error States */
+.error {
+    border-color: #dc3232 !important;
+    box-shadow: 0 0 2px rgba(204, 74, 74, 0.8) !important;
+}
+
+.error-message {
+    color: #dc3232;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Success States */
+.success {
+    border-color: #46b450 !important;
+    box-shadow: 0 0 2px rgba(70, 180, 80, 0.8) !important;
+}
+
+/* Field Mapping Validation */
+.field-mapping-row.invalid .salesforce-field {
+    border-color: #dc3232;
+}
+
+.field-mapping-row.valid .salesforce-field {
+    border-color: #46b450;
+}
+
+/* Tooltips */
+.tooltip {
+    position: relative;
+    cursor: help;
+}
+
+.tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    z-index: 1000;
+}
+
+.tooltip:hover::after {
+    opacity: 1;
+}
+
+/* Checkbox Strategy Specific Styles */
+.checkbox-strategy-help {
+    background: #f0f6fc;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.checkbox-strategy-help h4 {
+    margin: 0 0 5px 0;
+    color: #135e96;
+}
+
+.checkbox-strategy-help ul {
+    margin: 5px 0;
+    padding-left: 20px;
+}
+
+.checkbox-strategy-help li {
+    margin: 2px 0;
+}

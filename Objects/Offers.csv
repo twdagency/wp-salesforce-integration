@@ -1,0 +1,87 @@
+﻿QualifiedApiName,DeveloperName,Description,DataType
+Id,Id,,Lookup()
+OwnerId,Owner,,"Lookup(User,Group)"
+IsDeleted,IsDeleted,,Checkbox
+Name,Name,,Text(80)
+CurrencyIsoCode,CurrencyIsoCode,,Picklist
+CreatedDate,CreatedDate,,Date/Time
+CreatedById,CreatedBy,,Lookup(User)
+LastModifiedDate,LastModifiedDate,,Date/Time
+LastModifiedById,LastModifiedBy,,Lookup(User)
+SystemModstamp,SystemModstamp,,Date/Time
+LastViewedDate,LastViewedDate,,Date/Time
+LastReferencedDate,LastReferencedDate,,Date/Time
+UserRecordAccessId,UserRecordAccess,,Lookup(User Record Access)
+Accepted_At__c,Accepted_At,Date and time when offer was accepted,Date/Time
+Accepted_By_User_Id__c,Accepted_By_User_Id,ID of the user who accepted the offer,Text(50)
+Buyer_Company_Id__c,Buyer_Company_Id,ID of the buyer company,Text(50)
+Buyer_Company__c,Buyer_Company,Name of the buyer company,Text(100)
+Buyer_Country__c,Buyer_Country,Country of the buyer,Text(100)
+Buyer_Full_Name__c,Buyer_Full_Name,Full name of the buyer,Text(100)
+Buyer_Location_Id__c,Buyer_Location_Id,ID of the buyer location,Text(50)
+Buyer_Location__c,Buyer_Location,Name of the buyer location/warehouse,Text(100)
+Buyer_User_Id__c,Buyer_User_Id,ID of the buyer user,Text(50)
+Created_Date__c,Created_Date,Date and time when offer was created,Date/Time
+Currency__c,Currency,Currency code for the offer,Text(10)
+Delivery_Location_Address__c,Delivery_Location_Address,Full address of the delivery location (buyer's warehouse/facility),Text Area(255)
+Earliest_Delivery_Date__c,Earliest_Delivery_Date,Earliest possible delivery date,Date
+Expires_At__c,Expires_At,Date and time when offer expires,Date/Time
+Incoterms__c,Incoterms,International commercial terms,Text(50)
+Latest_Delivery_Date__c,Latest_Delivery_Date,Latest possible delivery date,Date
+Material_Name__c,Material_Name,"Full material name including type, item, form, grading, color, finishing",Text(255)
+Material_Packing__c,Material_Packing,How the material is packaged,Text(100)
+Material_Type__c,Material_Type,Type of material,Text(100)
+Material_Weight__c,Material_Weight,Weight of the material,"Number(16, 2)"
+Message__c,Message,Message accompanying the offer,Text(255)
+Needs_Transport__c,Needs_Transport,Whether transport is needed,Checkbox
+Offer_State__c,Offer_State,Current state of the offer,Text(50)
+Offer_Status__c,Offer_Status,Current status of the offer,Text(50)
+Offered_Price_Per_Unit__c,Offered_Price_Per_Unit,Price offered per unit,"Currency(16, 2)"
+Pickup_Location_Address__c,Pickup_Location_Address,Full address of the pickup location (seller's warehouse/facility),Text Area(255)
+Quantity__c,Quantity,Quantity of the offer,"Number(16, 2)"
+Rejected_By_User_Id__c,Rejected_By_User_Id,ID of the user who rejected the offer,Text(50)
+Rejection_Reason__c,Rejection_Reason,Reason for offer rejection,Text(255)
+Rejection_Source__c,Rejection_Source,Source of the rejection,Text(50)
+Related_Listing__c,Related_Listing,ID of the related listing,Text(50)
+Seller_Company_Id__c,Seller_Company_Id,ID of the seller company,Text(50)
+Seller_Company__c,Seller_Company,Name of the seller company,Text(100)
+Seller_Country__c,Seller_Country,Country of the seller,Text(100)
+Seller_Full_Name__c,Seller_Full_Name,Full name of the seller,Text(100)
+Seller_Location_Id__c,Seller_Location_Id,ID of the seller location,Text(50)
+Seller_Location__c,Seller_Location,Name of the seller location/warehouse,Text(100)
+Seller_User_Id__c,Seller_User_Id,ID of the seller user,Text(50)
+Shipping_Port__c,Shipping_Port,Port for shipping,Text(100)
+Total_Price__c,Total_Price,Total price of the offer,"Currency(16, 2)"
+WasteTrade_Offer_Id__c,WasteTrade_Offer_Id,Unique identifier from WasteTrade system,Text(50)  (External ID) (Unique Case Insensitive)
+admin_bid_status__c,admin_bid_status,,Picklist
+bid_accepted__c,bid_accepted,,Checkbox
+bid_currency__c,bid_currency,,Text(255)
+bid_custom_value__c,bid_custom_value,,"Number(18, 0)"
+bid_final_value__c,bid_final_value,,"Number(18, 0)"
+bid_status__c,bid_status,,Picklist
+bid_value__c,bid_value,,Text(255)
+bidder_distance__c,bidder_distance,,Text(255)
+bidder_id__c,bidder_id,,Text(255)
+bidder_profile__c,bidder_profile,,Text(255)
+bidder_username__c,bidder_username,,Text(255)
+bidder_warehouse_location__c,bidder_warehouse_location,,Text(255)
+buyer_earliest_delivery_date__c,buyer_earliest_delivery_date,,Date
+buyer_latest_delivery_date__c,buyer_latest_delivery_date,,Date
+buyer_loads_remaining__c,buyer_loads_remaining,,"Number(18, 0)"
+buyer_warehouse_id__c,buyer_warehouse_id,,Text(255)
+delivery_status__c,delivery_status,,Picklist
+listing__c,listing,,Text(255)
+listing_link__c,listing_link,,URL(255)
+listing_sold__c,listing_sold,,Checkbox
+listing_user_id__c,listing_user_id,,Text(255)
+listing_username__c,listing_username,,Text(255)
+number_of_loads_bid_on__c,number_of_loads_bid_on,,"Number(18, 0)"
+offer_valid_date__c,offer_valid_date,,Date
+po_details__c,po_details,,Text Area(255)
+po_pdf__c,po_pdf,,Text(255)
+post_notes__c,post_notes,,Text Area(255)
+sales_listing__c,sales_listing,,Lookup(Sales Listing)
+warehouse_address__c,warehouse_address,,Text Area(255)
+wt_offer_admin__c,wt_offer_admin,,Text(255)
+Buyer__c,Buyer,,Lookup(Contact)
+Seller__c,Seller,,Lookup(Contact)

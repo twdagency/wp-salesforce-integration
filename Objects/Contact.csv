@@ -1,0 +1,103 @@
+﻿QualifiedApiName,DeveloperName,Description,DataType
+SYNTHETIC_RUBBER__c,SYNTHETIC_RUBBER,,Checkbox
+pi__first_search_term__c,first_search_term,"If a Prospects first touch was the result of a search, this field contains the search term.",Text(255)
+sansancard__CreatedByScanToSalesforce__c,CreatedByScanToSalesforce,,Checkbox
+No_Longer_With_Company__c,No_Longer_With_Company,,Checkbox
+Full_Name_Link__c,Full_Name_Link,,Formula (Text)
+PC__c,PC,,Checkbox
+Site_Role__c,Site_Role,,Text(255)
+FIBRE_KRAFT_GRADES__c,FIBRE_KRAFT_GRADES,,Checkbox
+Phone_Opt_In__c,Phone_Opt_In,,Checkbox
+pi__campaign__c,campaign,"The Account Engagement Campaign represents the first marketing touch with a prospect. It may be a campaign associated with your web site, landing page, paid search initiative, or any other marketing effort. Prospects may only be associated with one Account Engagement campaign. This value can later be changed manually or via an Automation Rule.",Text(255)
+PE__c,PE,,Checkbox
+pi__first_touch_url__c,first_touch_url,The value of the referrer for the first tracked request made by a Prospect.,Long Text Area(65000)
+pi__Needs_Score_Synced__c,Needs_Score_Synced,This field is no longer used.,Checkbox
+pi__score__c,score,"The Account Engagement score is based on implicit buying signals a lead demonstrates through his or her activities and responses to your marketing efforts. The higher the score, the more active the lead has been. A combination of score (implicit buying signals) and grade (explicit factors) helps you prioritize your prospects. Score, like grade, is calculated within the Account Engagement system and cannot be edited in Salesforce.com.","Number(18, 0)"
+EPS__c,EPS,,Checkbox
+pi__utm_source__c,utm_source,,Text(255)
+OTHER_MIX__c,OTHER_MIX,,Checkbox
+PA__c,PA,,Checkbox
+pi__utm_campaign__c,utm_campaign,,Text(255)
+FIBRE_SPECIAL_GRADES__c,FIBRE_SPECIAL_GRADES,,Checkbox
+PS__c,PS,,Checkbox
+pi__conversion_date__c,conversion_date,"The date and time of the form, form handler, or landing page submission when an Account Engagement tracked anonymous visitor first became a known prospect.",Date/Time
+WasteTrade_Company_Interest__c,WasteTrade_Company_Interest,,Picklist
+Marketing_Opt_In__c,Marketing_Opt_In,,Checkbox
+pi__conversion_object_type__c,conversion_object_type,"The type of object which converted an anonymous visitor into a named prospect (form, form handler, landing page, or video form).",Text(255)
+pi__last_activity__c,last_activity,,Date/Time
+LDPE__c,LDPE,,Checkbox
+pi__utm_medium__c,utm_medium,,Text(255)
+FIBRE_ORDINARY_GRADES__c,FIBRE_ORDINARY_GRADES,,Checkbox
+pi__pardot_hard_bounced__c,pardot_hard_bounced,Boolean that determines whether contact hard bounced.,Checkbox
+HDPE__c,HDPE,,Checkbox
+Trade_Reference__c,Trade_Reference,,Checkbox
+Full_Name__c,Full_Name,,Formula (Text)
+OTHER_SINGLE_SOURCES__c,OTHER_SINGLE_SOURCES,,Checkbox
+ABS__c,ABS,,Checkbox
+Waste_Trade_User_Id__c,Waste_Trade_User_Id,,Text(255)  (External ID) (Unique Case Sensitive)
+FIBRE_HIGH_GRADES__c,FIBRE_HIGH_GRADES,,Checkbox
+pi__first_activity__c,first_activity,,Date/Time
+Site__c,Site,,Lookup(Site)
+Text_Opt_In__c,Text_Opt_In,,Checkbox
+NON_FERROUS_METAL__c,NON_FERROUS_METAL,,Checkbox
+pi__Pardot_Last_Scored_At__c,Pardot_Last_Scored_At,"Used for Account Engagement Scoring Categories. Indicates the last time a Scoring Category score was updated for this contact.
+
+            Scoring Categories are used for multi-product engagement scoring in Account Engagement and are available to customers using Account Engagement Pro Edition and Account Engagement Ultimate Edition. Please visit this page for more information on this feature and how to set up Salesforce to view these scores: http://help.pardot.com/customer/portal/articles/2396977-scoring-categories-overview",Date/Time
+pi__first_search_type__c,first_search_type,"If a Prospects first touch was the result of a search, this field contains the type of search conducted.",Text(255)
+PET__c,PET,,Checkbox
+ACRYLIC__c,ACRYLIC,,Checkbox
+FERROUS_METAL__c,FERROUS_METAL,,Checkbox
+pi__conversion_object_name__c,conversion_object_name,"This is the name of the object (form, form handler, landing page, or video form) that converted an anonymous visitor into a named prospect.",Text(255)
+pi__comments__c,comments,,Long Text Area(32000)
+pi__url__c,url,This link takes you directly into the relevant prospect's profile within Account Engagement. From there you can view his or her complete activity history. This URL is generated within the Account Engagement system and cannot be edited in Salesforce.com.,URL(255)
+Subsidiary_Source__c,Subsidiary_Source,,Formula (Text)
+pi__grade__c,grade,"The Account Engagement grade is based on how well a prospect fits your organization's ideal customer profile. Explicit factors such as company size, industry, job title and more help determine this value. A combination of grade (explicit) and score (implicit) can be used to very effectively optimize the sales team's time. Grade, like score, is calculated within the Account Engagement system and cannot be edited in Salesforce.com.",Text(10)
+pi__utm_term__c,utm_term,,Text(255)
+PVC__c,PVC,,Checkbox
+pi__created_date__c,created_date,The Account Engagement created date represents the date and time at which the Prospect record was created in Account Engagement. This will often differ from your Salesforce.com created date.,Date/Time
+pi__utm_content__c,utm_content,,Text(255)
+NATURAL_RUBBER__c,NATURAL_RUBBER,,Checkbox
+pi__notes__c,notes,,Long Text Area(32000)
+PP__c,PP,,Checkbox
+FIBRE_MEDIUM_GRADES__c,FIBRE_MEDIUM_GRADES,,Checkbox
+Email_Opt_In__c,Email_Opt_In,,Checkbox
+Id,Id,,Lookup()
+IsDeleted,IsDeleted,,Checkbox
+MasterRecordId,MasterRecord,,Lookup(Contact)
+AccountId,Account,,Lookup(Account)
+Name,Name,,Name
+MailingAddress,MailingAddress,,Address
+Phone,Phone,,Phone
+Fax,Fax,,Phone
+MobilePhone,MobilePhone,,Phone
+ReportsToId,ReportsTo,,Lookup(Contact)
+Email,Email,,Email
+Title,Title,,Text(128)
+Department,Department,,Text(80)
+CurrencyIsoCode,CurrencyIsoCode,,Picklist
+OwnerId,Owner,,Lookup(User)
+HasOptedOutOfEmail,HasOptedOutOfEmail,,Checkbox
+CreatedDate,CreatedDate,,Date/Time
+CreatedById,CreatedBy,,Lookup(User)
+LastModifiedDate,LastModifiedDate,,Date/Time
+LastModifiedById,LastModifiedBy,,Lookup(User)
+SystemModstamp,SystemModstamp,,Date/Time
+LastActivityDate,LastActivityDate,,Date
+LastCURequestDate,LastCURequestDate,,Date/Time
+LastCUUpdateDate,LastCUUpdateDate,,Date/Time
+LastViewedDate,LastViewedDate,,Date/Time
+LastReferencedDate,LastReferencedDate,,Date/Time
+UserRecordAccessId,UserRecordAccess,,Lookup(User Record Access)
+EmailBouncedReason,EmailBouncedReason,,Text(255)
+EmailBouncedDate,EmailBouncedDate,,Date/Time
+IsEmailBounced,IsEmailBounced,,Checkbox
+PhotoUrl,PhotoUrl,,URL(255)
+Jigsaw,Jigsaw,,Text(20)
+JigsawContactId,JigsawContact,,External Lookup
+ActivityMetricId,ActivityMetric,,Lookup(Activity Metric)
+ActivityMetricRollupId,ActivityMetricRollup,,Lookup(Activity Metric Rollup)
+IsPriorityRecord,IsPriorityRecord,,Checkbox
+ContactSource,ContactSource,,Picklist
+TitleType,TitleType,,Picklist
+DepartmentGroup,DepartmentGroup,,Picklist
+BuyerAttributes,BuyerAttributes,,Picklist (Multi-Select)
