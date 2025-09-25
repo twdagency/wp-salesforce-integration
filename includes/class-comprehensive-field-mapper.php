@@ -609,6 +609,10 @@ class WSI_Comprehensive_Field_Mapper {
      * Get all available Salesforce objects
      */
     public function get_available_objects() {
+        // Ensure field_mappings is always an array
+        if (!is_array($this->field_mappings)) {
+            $this->field_mappings = array();
+        }
         return array_keys($this->field_mappings);
     }
     

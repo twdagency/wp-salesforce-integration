@@ -205,7 +205,15 @@ class WSI_Admin_Settings {
      */
     private function post_type_settings() {
         $enabled_post_types = get_option('wsi_enabled_post_types', array());
+        // Ensure it's always an array
+        if (!is_array($enabled_post_types)) {
+            $enabled_post_types = array();
+        }
         $sync_configs = get_option('wsi_sync_configs', array());
+        // Ensure sync_configs is also an array
+        if (!is_array($sync_configs)) {
+            $sync_configs = array();
+        }
         $post_types = get_post_types(array('public' => true), 'objects');
         
         ?>

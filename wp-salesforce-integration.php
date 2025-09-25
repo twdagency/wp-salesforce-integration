@@ -12,6 +12,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Define plugin constants
+define('WSI_PLUGIN_FILE', __FILE__);
 define('WSI_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('WSI_PLUGIN_PATH', plugin_dir_path(__FILE__));
 define('WSI_VERSION', '1.0.0');

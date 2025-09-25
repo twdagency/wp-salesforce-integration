@@ -302,29 +302,55 @@ add_filter('wsi_validate_before_sync', 'waste_trading_validation', 10, 2);
 
 /**
  * Custom sync triggers for waste trading platform
+ * Fixed to prevent data overwrites during post updates
  */
 function waste_trading_custom_sync_triggers() {
-    // Sync when listing status changes
+    // Only sync on specific status changes, not on every field update
     add_action('acf/update_value/name=listing_status', function($value, $post_id, $field) {
-        if ($value === 'Approved') {
-            $sync_handler = new WSI_Post_Sync_Handler();
-            $sync_handler->queue_post_sync($post_id, 'status_approved');
+        // Only trigger sync if status is changing TO 'Approved'
+        $old_value = get_field('listing_status', $post_id, false); // Get raw value without formatting
+        if ($value === 'Approved' && $old_value !== 'Approved') {
+            // Schedule sync after all ACF saves are complete
+            wp_schedule_single_event(time() + 5, 'waste_trading_delayed_sync', array($post_id, 'status_approved'));
         }
     }, 10, 3);
     
-    // Sync when listing is sold
     add_action('acf/update_value/name=listing_sold', function($value, $post_id, $field) {
-        if ($value === '1') {
-            $sync_handler = new WSI_Post_Sync_Handler();
-            $sync_handler->queue_post_sync($post_id, 'listing_sold');
+        // Only trigger sync if listing is being marked as sold
+        $old_value = get_field('listing_sold', $post_id, false);
+        if ($value === '1' && $old_value !== '1') {
+            wp_schedule_single_event(time() + 5, 'waste_trading_delayed_sync', array($post_id, 'listing_sold'));
         }
     }, 10, 3);
     
-    // Sync when quantity changes
-    add_action('acf/update_value/name=quantity', function($value, $post_id, $field) {
+    // Don't auto-sync on quantity changes to prevent overwrites
+    // Quantity changes should be manual or handled differently
+    
+    // Handle the delayed sync
+    add_action('waste_trading_delayed_sync', function($post_id, $reason) {
+        // Double-check the post still exists and is in the right state
+        $post = get_post($post_id);
+        if (!$post || $post->post_status !== 'publish') {
+            return;
+        }
+        
+        // Only sync if the listing is still approved
+        $approved_listing = get_field('approved_listing', $post_id);
+        if (!$approved_listing) {
+            return;
+        }
+        
+        // Perform the sync
         $sync_handler = new WSI_Post_Sync_Handler();
-        $sync_handler->queue_post_sync($post_id, 'quantity_updated');
-    }, 10, 3);
+        $sync_handler->handle_acf_save($post_id);
+        
+        // Log the sync reason
+        $logger = new WSI_Logger();
+        $logger->info('Delayed sync triggered', array(
+            'post_id' => $post_id,
+            'reason' => $reason
+        ), $post_id, 'sync');
+    }, 10, 2);
 }
 add_action('init', 'waste_trading_custom_sync_triggers');
 
@@ -342,7 +368,7 @@ function waste_trading_admin_settings() {
                 <td>
                     <input type="checkbox" name="wsi_auto_sync_status_change" value="1" 
                            <?php checked(get_option('wsi_auto_sync_status_change'), 1); ?> />
-                    <p class="description">Automatically sync when listing status changes to "Approved"</p>
+                    <p class="description">Automatically sync when listing status changes to "Approved" (prevents overwrites)</p>
                 </td>
             </tr>
             
@@ -352,6 +378,13 @@ function waste_trading_admin_settings() {
                     <input type="checkbox" name="wsi_auto_sync_sale" value="1" 
                            <?php checked(get_option('wsi_auto_sync_sale'), 1); ?> />
                     <p class="description">Automatically sync when listing is marked as sold</p>
+                </td>
+            </tr>
+            
+            <tr>
+                <th scope="row">Manual Quantity Sync</th>
+                <td>
+                    <p class="description">Quantity changes require manual sync to prevent data overwrites. Use the "Sync to Salesforce" button in the post editor.</p>
                 </td>
             </tr>
             
@@ -366,6 +399,13 @@ function waste_trading_admin_settings() {
                         <li>Seller ID</li>
                         <li>Approved Listing (must be 1)</li>
                     </ul>
+                </td>
+            </tr>
+            
+            <tr>
+                <th scope="row">Sync Behavior</th>
+                <td>
+                    <p class="description"><strong>Fixed:</strong> Quantity and approval status will no longer be overwritten during post updates. Only specific status changes trigger automatic sync.</p>
                 </td>
             </tr>
         </table>

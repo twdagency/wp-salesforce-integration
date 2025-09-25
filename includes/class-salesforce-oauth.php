@@ -23,10 +23,28 @@ class WSI_Salesforce_OAuth {
         $this->client_id = get_option('wsi_oauth_client_id');
         $this->client_secret = get_option('wsi_oauth_client_secret');
         $this->redirect_uri = get_option('wsi_oauth_redirect_uri');
-        $this->authorization_uri = get_option('wsi_oauth_authorization_uri');
+        $this->authorization_uri = $this->get_authorization_uri();
         $this->instance_url = get_option('wsi_oauth_instance_url');
         $this->access_token = get_option('wsi_oauth_access_token');
         $this->refresh_token = get_option('wsi_oauth_refresh_token');
+    }
+    
+    /**
+     * Get authorization URI based on environment
+     */
+    private function get_authorization_uri() {
+        $environment = get_option('wsi_oauth_environment', 'production');
+        $custom_uri = get_option('wsi_oauth_authorization_uri');
+        
+        switch ($environment) {
+            case 'sandbox':
+                return 'https://test.salesforce.com';
+            case 'custom':
+                return $custom_uri ?: 'https://login.salesforce.com';
+            case 'production':
+            default:
+                return 'https://login.salesforce.com';
+        }
     }
     
     /**
@@ -37,7 +55,8 @@ class WSI_Salesforce_OAuth {
             'response_type' => 'code',
             'client_id' => $this->client_id,
             'redirect_uri' => $this->redirect_uri,
-            'scope' => 'api refresh_token'
+            'scope' => 'api refresh_token',
+            'state' => 'wsi_oauth'
         );
         
         return $this->authorization_uri . '/services/oauth2/authorize?' . http_build_query($params);
@@ -72,8 +91,10 @@ class WSI_Salesforce_OAuth {
         $body = wp_remote_retrieve_body($response);
         $data = json_decode($body, true);
         
+        
         if (isset($data['error'])) {
-            throw new Exception('Token exchange error: ' . $data['error_description']);
+            $error_msg = isset($data['error_description']) ? $data['error_description'] : $data['error'];
+            throw new Exception('Token exchange error: ' . $error_msg);
         }
         
         if (isset($data['access_token'])) {
@@ -126,15 +147,17 @@ class WSI_Salesforce_OAuth {
         $data = json_decode($body, true);
         
         if (isset($data['error'])) {
-            throw new Exception('Token refresh error: ' . $data['error_description']);
+            $error_msg = isset($data['error_description']) ? $data['error_description'] : $data['error'];
+            throw new Exception('Token refresh error: ' . $error_msg);
         }
         
         if (isset($data['access_token'])) {
             $this->access_token = $data['access_token'];
+            $expires_in = isset($data['expires_in']) ? $data['expires_in'] : 7200; // Default 2 hours
             
             // Update stored token
             update_option('wsi_oauth_access_token', $this->access_token);
-            update_option('wsi_oauth_token_expires', time() + $data['expires_in']);
+            update_option('wsi_oauth_token_expires', time() + $expires_in);
             
             return true;
         }

@@ -30,8 +30,8 @@ class WSI_Post_Sync_Handler {
         add_action('trash_post', array($this, 'handle_post_trash'), 10, 1);
         add_action('untrash_post', array($this, 'handle_post_untrash'), 10, 1);
         
-        // ACF specific hooks
-        add_action('acf/save_post', array($this, 'handle_acf_save'), 20); // Priority 20 to run after ACF saves
+        // ACF specific hooks - temporarily disabled to fix post save issue
+        // add_action('acf/save_post', array($this, 'handle_acf_save'), 20); // Priority 20 to run after ACF saves
         
         // AJAX hooks
         add_action('wp_ajax_wsi_sync_post', array($this, 'handle_ajax_sync'));
@@ -278,7 +278,19 @@ class WSI_Post_Sync_Handler {
      * Check if post type should be synced
      */
     private function should_sync_post_type($post_type) {
+        // Don't sync ACF post types
+        if (in_array($post_type, array('acf-field-group', 'acf-field'))) {
+            return false;
+        }
+        
         $enabled_post_types = get_option('wsi_enabled_post_types', array());
+        
+        // Ensure we have an array
+        if (!is_array($enabled_post_types)) {
+            error_log('WSI Post Sync: enabled_post_types is not an array: ' . print_r($enabled_post_types, true));
+            return false;
+        }
+        
         return in_array($post_type, $enabled_post_types);
     }
     

@@ -18,6 +18,7 @@ class WSI_ACF_Field_Admin {
         add_action('admin_menu', array($this, 'add_acf_menu'));
         add_action('wp_ajax_wsi_create_acf_fields', array($this, 'handle_create_fields_ajax'));
         add_action('wp_ajax_wsi_check_acf_status', array($this, 'handle_check_status_ajax'));
+        add_action('wp_ajax_wsi_test_acf_ajax', array($this, 'handle_test_ajax'));
     }
     
     /**
@@ -101,6 +102,9 @@ class WSI_ACF_Field_Admin {
                             </div>
                             
                             <div class="field-actions">
+                                <button id="test-ajax" class="button button-secondary">
+                                    <span class="dashicons dashicons-admin-tools"></span> Test AJAX
+                                </button>
                                 <button id="create-acf-fields" class="button button-primary button-large">
                                     <span class="dashicons dashicons-plus"></span> Create Required Fields
                                 </button>
@@ -446,6 +450,37 @@ class WSI_ACF_Field_Admin {
         
         <script>
         jQuery(document).ready(function($) {
+            // Test AJAX
+            $('#test-ajax').on('click', function() {
+                var button = $(this);
+                var originalText = button.html();
+                
+                button.prop('disabled', true).html('<span class="dashicons dashicons-update"></span> Testing...');
+                
+                $.ajax({
+                    url: ajaxurl,
+                    type: 'POST',
+                    data: {
+                        action: 'wsi_test_acf_ajax'
+                    },
+                    success: function(response) {
+                        console.log('Test AJAX Response:', response);
+                        if (response.success) {
+                            showNotice('AJAX is working: ' + response.data, 'success');
+                        } else {
+                            showNotice('AJAX test failed: ' + response.data, 'error');
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        console.log('Test AJAX Error:', xhr, status, error);
+                        showNotice('AJAX test failed: ' + error, 'error');
+                    },
+                    complete: function() {
+                        button.prop('disabled', false).html(originalText);
+                    }
+                });
+            });
+            
             // Create ACF fields
             $('#create-acf-fields').on('click', function() {
                 var button = $(this);
@@ -461,17 +496,32 @@ class WSI_ACF_Field_Admin {
                         nonce: '<?php echo wp_create_nonce('wsi_acf_nonce'); ?>'
                     },
                     success: function(response) {
+                        console.log('ACF AJAX Success Response:', response);
                         if (response.success) {
                             showNotice('ACF fields created successfully!', 'success');
                             setTimeout(function() {
                                 location.reload();
                             }, 1000);
                         } else {
-                            showNotice('Failed to create ACF fields: ' + response.data.message, 'error');
+                            var errorMsg = response.data && response.data.message ? response.data.message : 'Unknown error';
+                            showNotice('Failed to create ACF fields: ' + errorMsg, 'error');
                         }
                     },
-                    error: function() {
-                        showNotice('Failed to create ACF fields due to an error', 'error');
+                    error: function(xhr, status, error) {
+                        console.log('ACF AJAX Error:', xhr, status, error);
+                        console.log('Response Text:', xhr.responseText);
+                        var errorMsg = 'Failed to create ACF fields due to an error';
+                        if (xhr.responseText) {
+                            try {
+                                var response = JSON.parse(xhr.responseText);
+                                if (response.data && response.data.message) {
+                                    errorMsg = response.data.message;
+                                }
+                            } catch (e) {
+                                errorMsg = 'Server error: ' + xhr.status + ' ' + xhr.statusText;
+                            }
+                        }
+                        showNotice(errorMsg, 'error');
                     },
                     complete: function() {
                         button.prop('disabled', false).html(originalText);
@@ -496,18 +546,48 @@ class WSI_ACF_Field_Admin {
      * Handle create fields AJAX request
      */
     public function handle_create_fields_ajax() {
-        check_ajax_referer('wsi_acf_nonce', 'nonce');
-        
-        if (!current_user_can('manage_options')) {
-            wp_send_json_error('Insufficient permissions');
-        }
-        
-        $result = $this->acf_setup->create_fields_programmatically();
-        
-        if ($result) {
-            wp_send_json_success('ACF fields created successfully');
-        } else {
-            wp_send_json_error('Failed to create ACF fields');
+        try {
+            error_log('WSI ACF: Starting field creation process');
+            
+            check_ajax_referer('wsi_acf_nonce', 'nonce');
+            error_log('WSI ACF: Nonce check passed');
+            
+            if (!current_user_can('manage_options')) {
+                wp_send_json_error('Insufficient permissions');
+            }
+            error_log('WSI ACF: Permission check passed');
+            
+            // Check if ACF is available
+            if (!$this->acf_setup->check_acf_availability()) {
+                wp_send_json_error('ACF plugin is not available. Please install and activate Advanced Custom Fields plugin.');
+            }
+            error_log('WSI ACF: ACF availability check passed');
+            
+            // Check if fields already exist
+            error_log('WSI ACF: Checking if fields exist...');
+            if ($this->acf_setup->fields_exist()) {
+                error_log('WSI ACF: Fields already exist');
+                wp_send_json_success('ACF fields already exist');
+            }
+            error_log('WSI ACF: Fields do not exist, proceeding with creation');
+            
+            $result = $this->acf_setup->create_fields_programmatically();
+            error_log('WSI ACF: Field creation result: ' . ($result ? 'success' : 'failed'));
+            
+            if ($result) {
+                wp_send_json_success('ACF fields created successfully');
+            } else {
+                wp_send_json_error('Failed to create ACF fields. Please check your WordPress error logs for more details.');
+            }
+            
+        } catch (Exception $e) {
+            error_log('WSI ACF Field Creation Error: ' . $e->getMessage());
+            error_log('WSI ACF Field Creation Stack Trace: ' . $e->getTraceAsString());
+            wp_send_json_error('Error creating ACF fields: ' . $e->getMessage());
+        } catch (Error $e) {
+            error_log('WSI ACF Field Creation Fatal Error: ' . $e->getMessage());
+            error_log('WSI ACF Field Creation Stack Trace: ' . $e->getTraceAsString());
+            wp_send_json_error('Fatal error creating ACF fields: ' . $e->getMessage());
         }
     }
     
@@ -523,5 +603,12 @@ class WSI_ACF_Field_Admin {
         
         $status = $this->acf_setup->get_field_status();
         wp_send_json_success($status);
+    }
+    
+    /**
+     * Handle test AJAX request
+     */
+    public function handle_test_ajax() {
+        wp_send_json_success('AJAX is working');
     }
 }

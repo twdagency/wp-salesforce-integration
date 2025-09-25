@@ -79,6 +79,10 @@ class WSI_Field_Mapping_Admin {
      */
     public function field_mappings_page() {
         $available_objects = $this->comprehensive_mapper->get_available_objects();
+        // Ensure it's always an array
+        if (!is_array($available_objects)) {
+            $available_objects = array();
+        }
         $selected_object = isset($_GET['object']) ? sanitize_text_field($_GET['object']) : 'Lead';
         
         if (!in_array($selected_object, $available_objects)) {
@@ -471,5 +475,4 @@ class WSI_Field_Mapping_Admin {
     }
 }
 
-// Initialize the admin interface
-new WSI_Field_Mapping_Admin();
+// Note: This class is instantiated in the main plugin file

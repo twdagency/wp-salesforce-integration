@@ -11,13 +11,12 @@ if (!defined('ABSPATH')) {
 class WSI_Admin_Dashboard {
     
     private $audit_trail;
-    private $field_mapping_manager;
     private $miniorange_handler;
     private $acf_setup;
     
     public function __construct() {
         $this->audit_trail = new WSI_Audit_Trail();
-        $this->field_mapping_manager = new WSI_Field_Mapping_Manager();
+        // Field mapping manager is instantiated in main plugin file
         $this->miniorange_handler = new WSI_MiniOrange_Migration_Handler();
         $this->acf_setup = new WSI_ACF_Field_Setup();
         

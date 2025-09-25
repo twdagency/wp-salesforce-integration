@@ -23,7 +23,8 @@ class WSI_Salesforce_Connection_Admin {
         add_action('wp_ajax_wsi_get_object_fields', array($this, 'handle_get_object_fields_ajax'));
         
         // Handle OAuth callback
-        add_action('init', array($this, 'handle_oauth_callback'));
+        add_action('wp_loaded', array($this, 'handle_oauth_callback'));
+        
     }
     
     /**
@@ -38,6 +39,16 @@ class WSI_Salesforce_Connection_Admin {
             'wsi-connection',
             array($this, 'connection_page')
         );
+        
+        // Also add to the settings menu for backward compatibility
+        add_submenu_page(
+            'wp-salesforce-integration',
+            'Salesforce Connection',
+            'Connection',
+            'manage_options',
+            'wsi-connection-settings',
+            array($this, 'connection_page')
+        );
     }
     
     /**
@@ -47,9 +58,29 @@ class WSI_Salesforce_Connection_Admin {
         $connection_status = $this->oauth->get_connection_status();
         $org_info = $this->oauth->get_organization_info();
         
+        // Check for connection success/error messages
+        $connected = isset($_GET['connected']) && $_GET['connected'] == '1';
+        $error = isset($_GET['error']) ? sanitize_text_field($_GET['error']) : '';
+        
         ?>
         <div class="wrap">
             <h1>Salesforce Connection Settings</h1>
+            
+            <?php if ($connected): ?>
+                <div class="notice notice-success is-dismissible">
+                    <p><strong>Success!</strong> Connected to Salesforce successfully.</p>
+                </div>
+            <?php endif; ?>
+            
+            <?php if ($error): ?>
+                <div class="notice notice-error is-dismissible">
+                    <p><strong>Connection Error:</strong> <?php echo esc_html($error); ?></p>
+                </div>
+            <?php endif; ?>
+            
+            <div id="wsi-connection-status" style="display: none; background: #d4edda; border: 1px solid #c3e6cb; color: #155724; padding: 10px; margin: 10px 0; border-radius: 4px;">
+                <strong>New OAuth Interface Loaded!</strong> This page now supports one-click Salesforce authentication.
+            </div>
             
             <!-- Connection Status -->
             <div class="connection-status">
@@ -90,7 +121,23 @@ class WSI_Salesforce_Connection_Admin {
                     <table class="form-table">
                         <tr>
                             <th scope="row">
-                                <label for="authorization_uri">Authorization URI</label>
+                                <label for="environment">Salesforce Environment</label>
+                            </th>
+                            <td>
+                                <select id="environment" name="environment" class="regular-text">
+                                    <option value="production" <?php selected(get_option('wsi_oauth_environment', 'production'), 'production'); ?>>Production</option>
+                                    <option value="sandbox" <?php selected(get_option('wsi_oauth_environment', 'production'), 'sandbox'); ?>>Sandbox</option>
+                                    <option value="custom" <?php selected(get_option('wsi_oauth_environment', 'production'), 'custom'); ?>>Custom URL</option>
+                                </select>
+                                <p class="description">
+                                    Select your Salesforce environment
+                                </p>
+                            </td>
+                        </tr>
+                        
+                        <tr id="custom-url-row" style="<?php echo get_option('wsi_oauth_environment', 'production') === 'custom' ? '' : 'display: none;'; ?>">
+                            <th scope="row">
+                                <label for="authorization_uri">Custom Authorization URI</label>
                             </th>
                             <td>
                                 <input type="url" 
@@ -98,9 +145,9 @@ class WSI_Salesforce_Connection_Admin {
                                        name="authorization_uri" 
                                        value="<?php echo esc_attr(get_option('wsi_oauth_authorization_uri', '')); ?>" 
                                        class="regular-text" 
-                                       required>
+                                       placeholder="https://yourcompany.my.salesforce.com">
                                 <p class="description">
-                                    Your Salesforce instance URL (e.g., https://letsrecycleit.my.salesforce.com)
+                                    Your custom Salesforce instance URL (must end with .salesforce.com)
                                 </p>
                             </td>
                         </tr>
@@ -144,14 +191,19 @@ class WSI_Salesforce_Connection_Admin {
                                 <label for="redirect_uri">Redirect URI</label>
                             </th>
                             <td>
-                                <input type="url" 
-                                       id="redirect_uri" 
-                                       name="redirect_uri" 
-                                       value="<?php echo esc_attr(get_option('wsi_oauth_redirect_uri', '')); ?>" 
-                                       class="regular-text" 
-                                       required>
+                                <div class="redirect-uri-container">
+                                    <input type="url" 
+                                           id="redirect_uri" 
+                                           name="redirect_uri" 
+                                           value="<?php echo esc_attr(get_option('wsi_oauth_redirect_uri', admin_url('admin.php?page=wsi-connection'))); ?>" 
+                                           class="regular-text" 
+                                           readonly>
+                                    <button type="button" id="copy-redirect-uri" class="button button-secondary">
+                                        <span class="dashicons dashicons-admin-page"></span> Copy
+                                    </button>
+                                </div>
                                 <p class="description">
-                                    Must match the Redirect URI in your Salesforce Connected App
+                                    <strong>Copy this URL</strong> and use it as the Callback URL in your Salesforce Connected App
                                 </p>
                             </td>
                         </tr>
@@ -237,7 +289,7 @@ class WSI_Salesforce_Connection_Admin {
                         <li>Fill in the required fields:
                             <ul>
                                 <li><strong>Connected App Name:</strong> WordPress Integration</li>
-                                <li><strong>API Name:</strong> WordPress_Integration</li>
+                                <li><strong>API Name:</strong> TWDA_Salesforce</li>
                                 <li><strong>Contact Email:</strong> Your email</li>
                             </ul>
                         </li>
@@ -406,10 +458,59 @@ class WSI_Salesforce_Connection_Admin {
             padding: 2px 6px;
             border-radius: 3px;
         }
+        
+        .redirect-uri-container {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        .redirect-uri-container input {
+            flex: 1;
+        }
+        
+        .redirect-uri-container button {
+            white-space: nowrap;
+        }
         </style>
         
         <script>
         jQuery(document).ready(function($) {
+            console.log('WSI Connection Admin: JavaScript loaded');
+            
+            // Show status message
+            $('#wsi-connection-status').fadeIn();
+            
+            // Environment change handler
+            $('#environment').on('change', function() {
+                var environment = $(this).val();
+                var customRow = $('#custom-url-row');
+                var authUriInput = $('#authorization_uri');
+                
+                if (environment === 'custom') {
+                    customRow.show();
+                    authUriInput.prop('required', true);
+                } else {
+                    customRow.hide();
+                    authUriInput.prop('required', false);
+                    
+                    // Set default URLs based on environment
+                    if (environment === 'production') {
+                        authUriInput.val('https://login.salesforce.com');
+                    } else if (environment === 'sandbox') {
+                        authUriInput.val('https://test.salesforce.com');
+                    }
+                }
+            });
+            
+            // Copy redirect URI
+            $('#copy-redirect-uri').on('click', function() {
+                var redirectUri = $('#redirect_uri').val();
+                navigator.clipboard.writeText(redirectUri).then(function() {
+                    showNotice('Redirect URI copied to clipboard!', 'success');
+                });
+            });
+            
             // Save settings
             $('#connection-form').on('submit', function(e) {
                 e.preventDefault();
@@ -650,12 +751,21 @@ class WSI_Salesforce_Connection_Admin {
             wp_send_json_error('Insufficient permissions');
         }
         
+        $environment = sanitize_text_field($_POST['environment']);
         $authorization_uri = sanitize_url($_POST['authorization_uri']);
         $client_id = sanitize_text_field($_POST['client_id']);
         $client_secret = sanitize_text_field($_POST['client_secret']);
         $redirect_uri = sanitize_url($_POST['redirect_uri']);
         $scopes = sanitize_text_field($_POST['scopes']);
         
+        // Set authorization URI based on environment
+        if ($environment === 'production') {
+            $authorization_uri = 'https://login.salesforce.com';
+        } elseif ($environment === 'sandbox') {
+            $authorization_uri = 'https://test.salesforce.com';
+        }
+        
+        update_option('wsi_oauth_environment', $environment);
         update_option('wsi_oauth_authorization_uri', $authorization_uri);
         update_option('wsi_oauth_client_id', $client_id);
         update_option('wsi_oauth_client_secret', $client_secret);
@@ -736,4 +846,5 @@ class WSI_Salesforce_Connection_Admin {
             wp_send_json_success($fields);
         }
     }
+    
 }

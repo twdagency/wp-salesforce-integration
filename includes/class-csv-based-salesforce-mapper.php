@@ -50,6 +50,10 @@ class WSI_CSV_Based_Salesforce_Mapper {
      * Get all available Salesforce objects
      */
     public function get_available_objects() {
+        // Ensure salesforce_objects is always an array
+        if (!is_array($this->salesforce_objects)) {
+            $this->salesforce_objects = array();
+        }
         return array_keys($this->salesforce_objects);
     }
     
@@ -64,10 +68,12 @@ class WSI_CSV_Based_Salesforce_Mapper {
     }
     
     /**
-     * Get field mappings for a specific Salesforce object
+* Get field mappings for a specific Salesforce object
      */
     public function get_field_mappings($salesforce_object) {
-        return isset($this->field_mappings[$salesforce_object]) ? $this->field_mappings[$salesforce_object] : array();
+        $mappings = isset($this->field_mappings[$salesforce_object]) ? $this->field_mappings[$salesforce_object] : array();
+        // Ensure it's always an array
+        return is_array($mappings) ? $mappings : array();
     }
     
     /**
